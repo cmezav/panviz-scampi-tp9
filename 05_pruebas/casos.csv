@@ -1,0 +1,13 @@
+id,requisito,caracteristica,area,entrada,procedimiento,esperado
+T01,R01,Adecuación funcional,VER|RD,Muestra 30 y oráculo de rechazos,Importar y comparar IDs líneas y causas,24 aceptados y 6 rechazos exactos
+T02,R03,Adecuación funcional,VER|RD,Muestra y oráculo de resumen,Consultar resumen y comparar todas las celdas,6 por distrito y 3 por grupo
+T03,R01,Eficiencia de desempeño,VER,Muestra 30,Medir importación HTTP local tres veces,Mayor duración ≤2000 ms
+T04,R03,Eficiencia de desempeño,VER,Muestra importada y Cayma,Medir actualización del resumen HTTP local tres veces,Mayor duración ≤2000 ms
+T05,R02,Fiabilidad,VER,Mismo archivo dos veces,Reimportar y comparar conjuntos e IDs,Sin incremento de registros ni IDs duplicados
+T06,R02,Fiabilidad,VER,Muestra persistida,Reiniciar proceso y comparar respuesta y archivo,Recuperación exacta del conjunto aceptado
+T07,R04,Seguridad,VER|RSKM,Rol lector y muestra importada,Enviar solicitud HTTP directa de publicación,HTTP 403 y sin archivo publicado
+T08,R04,Seguridad,VER|RSKM,Publicación existente e importación distinta,Intentar publicación como lector y verificar hash y log,HTTP 403 y publicación idéntica
+T09,R05,Capacidad de interacción,VAL,Interfaz y P026 sin distrito,Usuario localiza motivo y corrige sin ayuda en su copia,Registro aceptado en ≤90 s
+T10,R05,Capacidad de interacción,VAL,Interfaz y Chivay,Usuario localiza distrito y reporta subtotales sin ayuda,Localiza resumen e indica total correcto en ≤90 s
+T11,R06,Mantenibilidad,VER|RSKM,Reglas y vista,Comparar diff y hash de vista y comprobar rechazo de P025,Regla localizada y fecha imposible rechazada con igual vista
+T12,R06,Mantenibilidad,VER,Muestra inicial oráculos y lector,Reejecutar importación resumen y autorización,Totales y rechazos exactos y HTTP 403
