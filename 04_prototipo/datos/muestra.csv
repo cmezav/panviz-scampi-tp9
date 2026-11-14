@@ -1,0 +1,31 @@
+id,distrito,fecha,grupo_etario,estado_validacion
+P001,Cayma,2026-11-01,Infantil,Pendiente
+P002,Cayma,2026-11-02,Adulto mayor,Pendiente
+P003,Cayma,2026-11-03,Infantil,Pendiente
+P004,Cayma,2026-11-04,Adulto mayor,Pendiente
+P005,Cayma,2026-11-05,Infantil,Pendiente
+P006,Cayma,2026-11-06,Adulto mayor,Pendiente
+P007,Cercado,2026-11-07,Infantil,Pendiente
+P008,Cercado,2026-11-08,Adulto mayor,Pendiente
+P009,Cercado,2026-11-09,Infantil,Pendiente
+P010,Cercado,2026-11-10,Adulto mayor,Pendiente
+P011,Cercado,2026-11-01,Infantil,Pendiente
+P012,Cercado,2026-11-02,Adulto mayor,Pendiente
+P013,Chivay,2026-11-03,Infantil,Pendiente
+P014,Chivay,2026-11-04,Adulto mayor,Pendiente
+P015,Chivay,2026-11-05,Infantil,Pendiente
+P016,Chivay,2026-11-06,Adulto mayor,Pendiente
+P017,Chivay,2026-11-07,Infantil,Pendiente
+P018,Chivay,2026-11-08,Adulto mayor,Pendiente
+P019,Yanque,2026-11-09,Infantil,Pendiente
+P020,Yanque,2026-11-10,Adulto mayor,Pendiente
+P021,Yanque,2026-11-01,Infantil,Pendiente
+P022,Yanque,2026-11-02,Adulto mayor,Pendiente
+P023,Yanque,2026-11-03,Infantil,Pendiente
+P024,Yanque,2026-11-04,Adulto mayor,Pendiente
+P025,Cayma,2026-02-30,Infantil,Pendiente
+P026,,2026-11-02,Infantil,Pendiente
+P003,Chivay,2026-11-02,Adulto mayor,Pendiente
+P028,Yanque,,Adulto mayor,Pendiente
+P029,Cercado,14/11/2026,Infantil,Pendiente
+P030,Cayma,2026-13-04,Adulto mayor,Pendiente
