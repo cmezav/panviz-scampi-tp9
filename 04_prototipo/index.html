@@ -1,0 +1,35 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PANVIZ | Prototipo</title>
+<style>
+:root{font-family:system-ui;color:#152a40;background:#f1f5f8}body{margin:0 auto;max-width:1060px;padding:28px}section{background:white;padding:19px 22px;border-radius:10px;margin:16px 0;border:1px solid #d9e4ec}h1,h2,p{margin-top:0}a{color:#165c79}label{display:inline-block;margin:7px 10px 7px 0}button,select,input{font:inherit}button{background:#145a72;color:white;border:0;border-radius:6px;padding:8px 13px;cursor:pointer}textarea{display:block;width:100%;height:74px;box-sizing:border-box;margin:8px 0}table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:5px 8px;border-bottom:1px solid #e2eaf0}small{color:#486071}#estado{font-weight:600;margin:9px 0 0}.row{display:flex;gap:24px;flex-wrap:wrap}.row section{flex:1;min-width:310px}
+</style>
+<header><a href="/evaluacion">Tablero de evaluación</a><h1>Vigilancia PANVIZ <small id="version"></small></h1><p>Micropiloto académico · Arequipa y Caylloma · registros sintéticos</p></header>
+<section><h2>Importar y corregir registros</h2><label>Archivo CSV <input id="file" type="file" accept=".csv"></label>
+<button id="sample">Cargar muestra de 30</button><textarea id="source" aria-label="Contenido CSV editable" placeholder="Contenido CSV editable para la corrección del usuario"></textarea>
+<button id="run">Validar e importar</button><p id="estado" role="status"></p></section>
+<div class="row"><section><h2>Consolidado de aceptados</h2><label>Distrito <select id="distrito"><option value="">Todos</option><option>Cayma</option><option>Cercado</option><option>Chivay</option><option>Yanque</option></select></label>
+<p id="conteo"></p><table id="totales"><thead><tr><th>Distrito<th>Grupo etario<th>Casos</tr></thead><tbody></tbody></table></section>
+<section><h2>Registros rechazados</h2><table id="rechazos"><thead><tr><th>Línea<th>ID<th>Causa</tr></thead><tbody></tbody></table></section></div>
+<section><h2>Publicación local</h2><label>Rol de simulación <select id="rol"><option value="lector">Lector</option><option value="publicador_simulado">Publicador simulado</option></select></label>
+<button id="publish">Intentar publicar</button><p id="resultado" role="status"></p><small>El servidor valida el rol enviado por el simulador. Operación local sin autenticación real.</small></section>
+<script>
+const node=(id)=>document.getElementById(id);
+async function read(path, opt){const r=await fetch(path,opt);return {code:r.status,data:await r.json()};}
+function rows(id, data, fields){
+ const body=node(id).tBodies[0];body.replaceChildren();
+ for(const item of data){const line=body.insertRow();for(const f of fields)line.insertCell().textContent=item[f]??'';}
+}
+async function refresh(){
+ const {data}=await read('/api/resumen?distrito='+encodeURIComponent(node('distrito').value));
+ node('version').textContent=data.version;
+ const shown=data.totales.reduce((sum,item)=>sum+item.total,0);
+ node('conteo').textContent=shown+' en vista · '+data.aceptados.length+' aceptados · '+data.rechazados.length+' rechazados';
+ rows('totales',data.totales,['distrito','grupo_etario','total']);rows('rechazos',data.rechazados,['linea','id','motivo']);
+}
+node('file').onchange=async(e)=>{if(e.target.files[0])node('source').value=await e.target.files[0].text();};
+node('sample').onclick=async()=>{node('source').value=await (await fetch('/artefacto/04_prototipo/datos/muestra.csv')).text();};
+node('run').onclick=async()=>{const {code,data}=await read('/api/importar',{method:'POST',body:node('source').value});node('estado').textContent=code===200?'Importación completada.':data.mensaje;if(code===200)await refresh();};
+node('distrito').onchange=refresh;
+node('publish').onclick=async()=>{const {code,data}=await read('/api/publicar',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({rol:node('rol').value})});node('resultado').textContent=code+' · '+data.mensaje;};
+refresh();
+</script></html>
