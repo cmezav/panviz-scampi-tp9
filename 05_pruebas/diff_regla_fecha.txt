@@ -1,0 +1,18 @@
+--- v1/fecha_valida.py
++++ v2/fecha_valida.py
+@@ -1,7 +1,13 @@
+-"""Línea base experimental TP9 con una regla incompleta sembrada."""
++"""Versión corregida TP9. Verifica fecha ISO y calendario."""
+ import re
+ from datetime import date
+ 
+ 
+ def fecha_valida(valor):
+-    return bool(re.fullmatch(r"\d{4}-\d{2}-\d{2}", valor))
++    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", valor):
++        return False
++    try:
++        date.fromisoformat(valor)
++    except ValueError:
++        return False
++    return True
