@@ -1,0 +1,6 @@
+id,integrante,responsabilidad_propuesta,revision_propuesta,aporte_1_confirmado,aporte_2_confirmado,aporte_3_confirmado,estado
+E1,Borda Espinoza Gabriela,Coordinación y mejora,Revisa tablero de E5,,,,Pendiente de confirmación personal
+E2,Meza Vizcarra Cielo,Requisitos y riesgos,Revisa el plan de E1,,,,Pendiente de confirmación personal
+E3,Fernandez Huarca Rodrigo,Implementación y versiones,Revisa trazabilidad de E2,,,,Pendiente de confirmación personal
+E4,Suclle Suca Michael,Pruebas y validación,Revisa código y log de E3,,,,Pendiente de confirmación personal
+E5,Ccoscco Alvis Italo,Evidencias y medición,Revisa pruebas de E4,,,,Pendiente de confirmación personal
