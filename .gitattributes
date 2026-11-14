@@ -1,0 +1,6 @@
+# Mantener los bytes de los archivos para verificar las huellas de evidencia.
+* -text
+*.docx binary
+*.ods binary
+*.png binary
+*.mp4 binary
