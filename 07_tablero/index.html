@@ -1,0 +1,84 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PANVIZ Evaluación</title>
+<style>
+:root{font-family:system-ui;color:#153149;background:#edf4f5;--deep:#163d51;--muted:#526c7c}body{max-width:1260px;margin:auto;padding:28px}header,section{margin-bottom:16px}header{background:var(--deep);color:white;border-radius:14px;padding:22px 26px}header a{color:#dcf5ec}header h1{margin:8px 0}header p{margin:0;color:#e2f0f3}section article,.box{background:white;border:1px solid #d2e1e7;border-radius:9px;padding:14px}h2{font-size:19px;margin:0 0 8px}h3{font-size:14px;margin:0 0 8px}.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:10px}.metrics strong{font-size:28px}.metrics small,.muted{display:block;color:var(--muted)}label{display:inline-block;margin:3px 16px 3px 0}select,button,input{font:inherit}button{background:var(--deep);color:white;padding:6px 12px;border:0;border-radius:5px;cursor:pointer}table{border-collapse:collapse;width:100%;font-size:.9rem}td,th{text-align:left;padding:6px 8px;border-bottom:1px solid #dce7eb;vertical-align:top}a{color:#145e70}nav a{margin-right:10px}.area{display:grid;grid-template-columns:42px minmax(150px,440px) 1fr;gap:10px;align-items:center;margin:5px 0}.bar{display:flex;height:12px;border-radius:6px;overflow:hidden;background:#edf0f3}.s0{background:#007c78}.s1{background:#d58e19}.s2{background:#ac4b55}.s3{background:#788998}.tag{display:inline-block;padding:2px 7px;background:#edf4f5;border-radius:5px;font-size:.8em}dialog{max-width:600px;border:1px solid #8299a6;border-radius:10px}summary{cursor:pointer;font-weight:650}.scroll{overflow:auto}label input{min-width:180px}
+</style>
+<header><a href="/">Abrir el prototipo</a><h1>PANVIZ Evaluación</h1><p>Autoevaluación académica inspirada en SCAMPI C · 24 criterios · piloto local</p></header>
+<section class="box"><label>Corte <select id="corte"><option value="v1">v1 · antes (experimento)</option><option value="v2" selected>v2 · después</option></select></label><label>Área <select id="area"><option value="">Todas</option></select></label><label>Responsable <select id="responsable"><option value="">Todos</option></select></label>
+<p class="muted" style="margin-bottom:0">Los filtros ajustan las tablas y barras. Los cinco indicadores conservan los denominadores de todo el corte.</p></section>
+<section class="metrics" id="metrics"></section>
+<section class="box"><h2>Estados por área</h2><div id="bars"></div><small>E = Evidenciado · P = Parcial · NE = No evidenciado · NA = No evaluable</small></section>
+<section class="box"><h2>Debilidades abiertas</h2><div class="scroll"><table id="deb"><thead><tr><th>ID<th>Impacto<th>Responsable<th>Observación</tr></thead><tbody></tbody></table></div></section>
+<section class="box"><h2>Criterios y evidencias</h2><div class="scroll"><table id="crit"><thead><tr><th>ID<th>Área<th>Responsable<th>Estado<th>Descripción<th>Evidencia</tr></thead><tbody></tbody></table></div></section>
+<section class="box"><details><summary>Pruebas del corte</summary><div class="scroll"><table id="testing"><thead><tr><th>Prueba<th>R<th>Resultado<th>Observado<th>Evidencia</tr></thead><tbody></tbody></table></div></details></section>
+<section class="box"><h2>Acopio de aportes</h2><form id="capture"><label>Criterio <select id="cid" required></select></label><label>Descripción <input name="descripcion" required></label><label>Ruta o enlace <input name="referencia" required></label><label>Autor real <input name="autor" required></label><button>Agregar</button></form><p class="muted" id="count"></p><button id="download">Exportar aportes CSV</button> <button id="clear">Limpiar borrador</button></section>
+<section class="box"><h2>Exportaciones</h2><nav id="exports"></nav></section>
+<dialog id="evidence"><div id="detail"></div><form method="dialog"><button>Cerrar</button></form></dialog>
+<script>
+const $=id=>document.getElementById(id);
+const states=['Evidenciado','Parcial','No evidenciado','No evaluable'];
+const names=['criterios','evidencias','pruebas','hallazgos','acciones','indicadores','trazabilidad'];
+const root='/artefacto/07_tablero/exportaciones/';
+const item=(tag,text)=>{const x=document.createElement(tag);x.textContent=text;return x;};
+const link=(label,path)=>{const a=item('a',label);a.href=path;return a;};
+for (const name of names) $('exports').append(link(name+'.csv',root+name+'.csv'));
+const scalar=(n,d)=>d?100*n/d:0;
+const fmt=(n,d)=>d?scalar(n,d).toFixed(1).replace('.',',')+' %':'Sin datos';
+function addCells(row,cells){for(const value of cells){const td=row.insertCell();td.append(value instanceof Node?value:document.createTextNode(value??''));}}
+function reset(id){const body=$(id).tBodies[0];body.replaceChildren();return body;}
+function addOption(target,value){target.add(new Option(value,value));}
+function render(data){
+ const v=$('corte').value,a=$('area').value,r=$('responsable').value;
+ const m=data.indicadores.find(d=>d.corte===v);
+ const all=data.criterios.filter(d=>d.corte===v);
+ const filtered=all.filter(d=>(!a||d.area===a)&&(!r||d.responsable===r));
+ const metrics=[['Cobertura documental',fmt(m.cobertura_n,m.cobertura_d),m.cobertura_n+' de '+m.cobertura_d+' con evidencia'],['Criterios evidenciados',fmt(m.evidenciados_n,m.evidenciados_d),m.evidenciados_n+' de '+m.evidenciados_d],['Ejecución de pruebas',fmt(m.ejecutadas_n,m.ejecutadas_d),m.ejecutadas_n+' de '+m.ejecutadas_d+' · '+m.pendientes+' pendientes'],['Éxito de pruebas',fmt(m.aprobadas_n,m.aprobadas_d),m.aprobadas_n+' de '+m.aprobadas_d+' · '+m.fallidas+' fallidas'],['Debilidades abiertas',String(m.debilidades_abiertas),'En todo el corte']];
+ $('metrics').replaceChildren(...metrics.map(([title,value,detail])=>{const n=item('article','');n.append(item('h3',title),item('strong',value),item('small',detail));return n;}));
+ $('bars').replaceChildren();
+ for(const area of new Set(filtered.map(x=>x.area))){
+  const data=filtered.filter(x=>x.area===area), counts=states.map(s=>data.filter(x=>x.estado===s).length);
+  const line=item('div','');line.className='area';const bar=item('div','');bar.className='bar';
+  counts.forEach((n,i)=>{const part=item('span','');part.className='s'+i;part.style.width=100*n/data.length+'%';part.title=states[i]+' '+n;bar.append(part);});
+  line.append(item('b',area),bar,item('small',counts[0]+' E · '+counts[1]+' P · '+counts[2]+' NE · '+counts[3]+' NA'));$('bars').append(line);
+ }
+ const deb=reset('deb');
+ for(const h of data.hallazgos.filter(h=>h.tipo==='Debilidad'&&h['estado_'+v]==='Abierta'&&(!r||h.responsable===r)&&(!a||all.find(c=>c.id===h.criterio)?.area===a)))addCells(deb.insertRow(),[h.id,h.impacto,h.responsable,h.observacion]);
+ if(!deb.rows.length)addCells(deb.insertRow(),['—','—','—','Sin debilidades abiertas con estos filtros.']);
+ const evidenceLinks=ids=>{
+  const wrap=item('span','');
+  for(const id of ids.split(' ').filter(Boolean)){
+   const e=data.evidencias.find(d=>d.id===id);if(!e)continue;
+   const b=item('a',id+' ');b.href='#'+id;
+   b.onclick=ev=>{ev.preventDefault();$('detail').replaceChildren(item('h2',id+' · '+e.descripcion),item('p',e.version+' · '+e.fecha+' · '+e.flujo),item('p',e.autor+' · '+e.revisor),link(e.ruta,'/artefacto/'+e.ruta));$('evidence').showModal();};
+   wrap.append(b);
+  }
+  return wrap;
+ };
+ const crit=reset('crit');
+ for(const c of filtered){
+  const caption=item('span',c.descripcion);caption.title=c.justificacion;
+  addCells(crit.insertRow(),[c.id,c.area,c.responsable,c.estado,caption,evidenceLinks(c.evidencia)]);
+ }
+ const test=reset('testing');
+ for(const t of data.pruebas.filter(t=>t.corte===v&&(!a||t.area.split('|').includes(a))))addCells(test.insertRow(),[t.id,t.requisito,t.resultado,t.observado,evidenceLinks(t.evidencia)]);
+}
+const K='panviz_aportes_v1';
+const aportes=()=>JSON.parse(localStorage.getItem(K)||'[]');
+const count=()=>$('count').textContent=aportes().length+' aportes en el borrador local de este navegador. La exportación se consolida después de revisar.';
+$('capture').onsubmit=e=>{e.preventDefault();const x=Object.fromEntries(new FormData(e.target));x.criterio=$('cid').value;x.fecha=new Date().toISOString();localStorage.setItem(K,JSON.stringify([...aportes(),x]));e.target.reset();count();};
+$('clear').onclick=()=>{if(confirm('¿Limpiar el borrador local de aportes?')){localStorage.removeItem(K);count();}};
+$('download').onclick=()=>{
+ const keys=['criterio','descripcion','referencia','autor','fecha'];
+ const quote=s=>{s=String(s??'');if(/^[=+@-]/.test(s))s="'"+s;return '"'+s.replaceAll('"','""')+'"';};
+ const csv='\ufeff'+keys.join(',')+'\r\n'+aportes().map(a=>keys.map(k=>quote(a[k])).join(',')).join('\r\n');
+ const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));const a=link('',url);a.download='aportes.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+};
+count();
+fetch(root+'evaluacion.json').then(r=>r.json()).then(d=>{
+ for(const a of new Set(d.criterios.map(c=>c.area)))addOption($('area'),a);
+ for(const r of new Set(d.criterios.map(c=>c.responsable)))addOption($('responsable'),r);
+ for(const c of d.criterios.filter(c=>c.corte==='v2'))addOption($('cid'),c.id);
+ const query=new URLSearchParams(location.search);if(query.get('corte')==='v1')$('corte').value='v1';
+ for(const id of ['corte','area','responsable'])$(id).onchange=()=>render(d);
+ render(d);
+}).catch(()=>{$('metrics').textContent='No se pudieron cargar las exportaciones. Ejecute generar.py desde el paquete.';});
+</script></html>
