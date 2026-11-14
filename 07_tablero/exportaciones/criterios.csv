@@ -1,0 +1,49 @@
+﻿corte,id,area,descripcion,responsable,estado,justificacion,evidencia
+v1,C01,OPD,Estándar y plantillas versionados,E1,Evidenciado,Proceso y tres plantillas localizables.,E02 E04
+v1,C02,OPD,Estándar aplicado en ambos flujos,E1,Evidenciado,Flujos comparten controles y tienen adaptación documentada.,E03 E13
+v1,C03,OPD,Revisión y aprobación del estándar por otro integrante,E1,No evidenciado,Falta corroboración y aprobación registradas.,
+v1,C04,OPD,Lección incorporada al proceso revisado,E1,No evidenciado,Antes no se incorporaba la lección. Después se registra el caso negativo y la regresión.,
+v1,C05,IPM,Plan integrado con alcance y roles,E1,Evidenciado,Plan y roles propuestos explícitos; aprobación se verifica en C07.,E01 E20
+v1,C06,IPM,Adaptación aplicada a captura y consolidación,E1,Evidenciado,Los resultados permiten verificar ejecución de ambos flujos.,E03 E17
+v1,C07,IPM,Revisión del plan y resolución de discrepancias,E1,No evidenciado,Acta de revisión e interacción del equipo pendientes.,
+v1,C08,IPM,Seguimiento integrado antes y después,E5,Parcial,En v1 existe un corte; v2 incorpora comparación reproducible.,E17 E24
+v1,C09,RD,Seis requisitos medibles vinculados a pruebas,E2,Evidenciado,Cada requisito apunta a una prueba observable.,E06 E15
+v1,C10,RD,Resultados cumplen aceptación funcional de datos,E2,Parcial,v1: 4/6 motivos coinciden y consolidado difiere. v2: 6/6 y totales exactos.,E09 E10 E17
+v1,C11,RD,Requisitos contrastados por otro integrante,E2,No evidenciado,Falta revisión nominal de requisitos y trazabilidad.,
+v1,C12,RD,Mejora mantiene trazabilidad hacia oráculo y regla,E2,Parcial,v1 describe regla pero no satisface el calendario; v2 incorpora corrección.,E06 E10 E17
+v1,C13,RSKM,Cinco riesgos con respuesta y rol responsable,E2,Evidenciado,"Cinco disparadores, responsables propuestos y respuestas.",E07
+v1,C14,RSKM,Controles de fecha y publicación ejecutados,E4,Parcial,Control local de permiso en ambas; calendario falla en v1.,E07 E17
+v1,C15,RSKM,Riesgos revisados por otra persona,E2,No evidenciado,Falta revisión cruzada registrada.,
+v1,C16,RSKM,Cambio y riesgo tienen una acción seguida,E2,Parcial,El riesgo de fecha pasa de reproducido a corregido; otros se mantienen abiertos.,E21 E22
+v1,C17,VER,Plan con 12 casos y esperado independiente,E4,Evidenciado,Hay dos casos para cada característica.,E09 E10 E15
+v1,C18,VER,Suite técnica ejecutada con evidencia reproducible,E4,Evidenciado,"Diez casos técnicos ejecutados por versión, incluidos los fallidos.",E16 E17
+v1,C19,VER,Revisión por pares de evidencia de verificación,E4,No evidenciado,Falta revisión humana del log y los pasos.,
+v1,C20,VER,Regresión posterior al cambio aprobada,E4,No evidenciado,T12 falla en la base experimental y pasa tras el cambio.,E17
+v1,C21,VAL,Protocolo con dos escenarios y condiciones de observación,E4,Evidenciado,"Tareas, cronometraje, condiciones y criterio de aceptación definidos.",E19
+v1,C22,VAL,Dos tareas ejecutadas con usuario simulado,E4,No evidenciado,No se observó una sesión humana para T09 o T10.,
+v1,C23,VAL,Usuario y revisor corroboran el resultado,E4,No evidenciado,No existe un acta confirmada por participantes.,
+v1,C24,VAL,Seguimiento de aceptación y adopción en ciclos posteriores,E4,No evaluable,La muestra cubre un piloto; falta observación de ciclos posteriores.,
+v2,C01,OPD,Estándar y plantillas versionados,E1,Evidenciado,Proceso y tres plantillas localizables.,E02 E04
+v2,C02,OPD,Estándar aplicado en ambos flujos,E1,Evidenciado,Flujos comparten controles y tienen adaptación documentada.,E03 E13
+v2,C03,OPD,Revisión y aprobación del estándar por otro integrante,E1,No evidenciado,Falta corroboración y aprobación registradas.,
+v2,C04,OPD,Lección incorporada al proceso revisado,E1,Evidenciado,Antes no se incorporaba la lección. Después se registra el caso negativo y la regresión.,E05 E28
+v2,C05,IPM,Plan integrado con alcance y roles,E1,Evidenciado,Plan y roles propuestos explícitos; aprobación se verifica en C07.,E01 E20
+v2,C06,IPM,Adaptación aplicada a captura y consolidación,E1,Evidenciado,Los resultados permiten verificar ejecución de ambos flujos.,E03 E18
+v2,C07,IPM,Revisión del plan y resolución de discrepancias,E1,No evidenciado,Acta de revisión e interacción del equipo pendientes.,
+v2,C08,IPM,Seguimiento integrado antes y después,E5,Evidenciado,En v1 existe un corte; v2 incorpora comparación reproducible.,E17 E18 E24
+v2,C09,RD,Seis requisitos medibles vinculados a pruebas,E2,Evidenciado,Cada requisito apunta a una prueba observable.,E06 E15
+v2,C10,RD,Resultados cumplen aceptación funcional de datos,E2,Evidenciado,v1: 4/6 motivos coinciden y consolidado difiere. v2: 6/6 y totales exactos.,E09 E10 E18
+v2,C11,RD,Requisitos contrastados por otro integrante,E2,No evidenciado,Falta revisión nominal de requisitos y trazabilidad.,
+v2,C12,RD,Mejora mantiene trazabilidad hacia oráculo y regla,E2,Evidenciado,v1 describe regla pero no satisface el calendario; v2 incorpora corrección.,E06 E10 E18 E28
+v2,C13,RSKM,Cinco riesgos con respuesta y rol responsable,E2,Evidenciado,"Cinco disparadores, responsables propuestos y respuestas.",E07
+v2,C14,RSKM,Controles de fecha y publicación ejecutados,E4,Evidenciado,Control local de permiso en ambas; calendario falla en v1.,E07 E18
+v2,C15,RSKM,Riesgos revisados por otra persona,E2,No evidenciado,Falta revisión cruzada registrada.,
+v2,C16,RSKM,Cambio y riesgo tienen una acción seguida,E2,Evidenciado,El riesgo de fecha pasa de reproducido a corregido; otros se mantienen abiertos.,E05 E21 E22
+v2,C17,VER,Plan con 12 casos y esperado independiente,E4,Evidenciado,Hay dos casos para cada característica.,E09 E10 E15
+v2,C18,VER,Suite técnica ejecutada con evidencia reproducible,E4,Evidenciado,"Diez casos técnicos ejecutados por versión, incluidos los fallidos.",E16 E18
+v2,C19,VER,Revisión por pares de evidencia de verificación,E4,No evidenciado,Falta revisión humana del log y los pasos.,
+v2,C20,VER,Regresión posterior al cambio aprobada,E4,Evidenciado,T12 falla en la base experimental y pasa tras el cambio.,E18 E28
+v2,C21,VAL,Protocolo con dos escenarios y condiciones de observación,E4,Evidenciado,"Tareas, cronometraje, condiciones y criterio de aceptación definidos.",E19
+v2,C22,VAL,Dos tareas ejecutadas con usuario simulado,E4,No evidenciado,No se observó una sesión humana para T09 o T10.,
+v2,C23,VAL,Usuario y revisor corroboran el resultado,E4,No evidenciado,No existe un acta confirmada por participantes.,
+v2,C24,VAL,Seguimiento de aceptación y adopción en ciclos posteriores,E4,No evaluable,La muestra cubre un piloto; falta observación de ciclos posteriores.,
