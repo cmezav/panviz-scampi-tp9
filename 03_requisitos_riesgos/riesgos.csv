@@ -1,0 +1,6 @@
+id,riesgo,probabilidad,impacto,respuesta,responsable_propuesto,disparador,pruebas
+K01,Fecha con formato ISO pero calendario imposible,Alta,Alta,Contrastar oráculo y aplicar regla de calendario,E3,Diferencia en T01 o T02,T01|T02|T11|T12
+K02,Publicación por rol lector,Media,Alta,Validar rol en servidor y comparar estado,E4,Código distinto de 403 o hash modificado,T07|T08
+K03,Duplicación o pérdida al reiniciar,Media,Alta,Reemplazo atómico y pruebas de reimportación y reinicio,E3,IDs repetidos o pérdida,T05|T06
+K04,Evidencia sin versión o responsable,Media,Alta,Verificar ruta y hash y revisión cruzada,E5,Registro sin artefacto o sin revisión,
+K05,Validación de uso sin usuario observado,Alta,Media,Realizar tareas y registrar tiempos reales,E4,Prueba no ejecutada,T09|T10
