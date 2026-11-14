@@ -1,0 +1,279 @@
+{
+  "version": "v1",
+  "fecha_utc": "2026-11-14T22:17:51Z",
+  "entorno": {
+    "python": "3.12.14",
+    "sistema": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "equipo": "x86_64",
+    "procesador": "no reportado",
+    "medicion": "perf_counter_ns; HTTP loopback; operación completa incluyendo serialización; una ejecución de suite"
+  },
+  "datos_sha256": "6da39070bf1d94c71d56a06ae59139a3701491cf3a8ec73d9b181c2cfead7e2f",
+  "pruebas": {
+    "T01": {
+      "resultado": "Fallida",
+      "observado": "4/6 inválidos rechazados, 26 aceptados",
+      "duracion_ms": 8.73,
+      "detalle": [
+        {
+          "linea": 27,
+          "id": "P026",
+          "motivo": "Campo obligatorio vacío"
+        },
+        {
+          "linea": 28,
+          "id": "P003",
+          "motivo": "ID duplicado"
+        },
+        {
+          "linea": 29,
+          "id": "P028",
+          "motivo": "Campo obligatorio vacío"
+        },
+        {
+          "linea": 30,
+          "id": "P029",
+          "motivo": "Fecha inválida"
+        }
+      ]
+    },
+    "T02": {
+      "resultado": "Fallida",
+      "observado": "Cayma 8, Cercado 6, Chivay 6, Yanque 6",
+      "duracion_ms": 0.924,
+      "detalle": [
+        {
+          "distrito": "Cayma",
+          "grupo_etario": "Adulto mayor",
+          "total": 4
+        },
+        {
+          "distrito": "Cayma",
+          "grupo_etario": "Infantil",
+          "total": 4
+        },
+        {
+          "distrito": "Cercado",
+          "grupo_etario": "Adulto mayor",
+          "total": 3
+        },
+        {
+          "distrito": "Cercado",
+          "grupo_etario": "Infantil",
+          "total": 3
+        },
+        {
+          "distrito": "Chivay",
+          "grupo_etario": "Adulto mayor",
+          "total": 3
+        },
+        {
+          "distrito": "Chivay",
+          "grupo_etario": "Infantil",
+          "total": 3
+        },
+        {
+          "distrito": "Yanque",
+          "grupo_etario": "Adulto mayor",
+          "total": 3
+        },
+        {
+          "distrito": "Yanque",
+          "grupo_etario": "Infantil",
+          "total": 3
+        }
+      ]
+    },
+    "T03": {
+      "resultado": "Aprobada",
+      "observado": "máx. 1.256 ms, tres repeticiones",
+      "duracion_ms": 3.571,
+      "detalle": [
+        1.143,
+        0.917,
+        1.256
+      ]
+    },
+    "T04": {
+      "resultado": "Aprobada",
+      "observado": "máx. 0.590 ms, tres repeticiones",
+      "duracion_ms": 1.891,
+      "detalle": [
+        0.577,
+        0.59,
+        0.579
+      ]
+    },
+    "T05": {
+      "resultado": "Aprobada",
+      "observado": "26 → 26 aceptados, 26 IDs únicos",
+      "duracion_ms": 2.268,
+      "detalle": [
+        "P001",
+        "P002",
+        "P003",
+        "P004",
+        "P005",
+        "P006",
+        "P007",
+        "P008",
+        "P009",
+        "P010",
+        "P011",
+        "P012",
+        "P013",
+        "P014",
+        "P015",
+        "P016",
+        "P017",
+        "P018",
+        "P019",
+        "P020",
+        "P021",
+        "P022",
+        "P023",
+        "P024",
+        "P025",
+        "P030"
+      ]
+    },
+    "T06": {
+      "resultado": "Aprobada",
+      "observado": "26 aceptados recuperados; archivo persistido idéntico",
+      "duracion_ms": 62.886,
+      "detalle": {
+        "sha256": "50d00bc0f774605176866227d879debf7c6e064b2a3b4923718f92f9c06a05de"
+      }
+    },
+    "T07": {
+      "resultado": "Aprobada",
+      "observado": "HTTP 403; no se creó publicación",
+      "duracion_ms": 0.741,
+      "detalle": {
+        "mensaje": "Publicación denegada para este rol de simulación."
+      }
+    },
+    "T08": {
+      "resultado": "Aprobada",
+      "observado": "publicador HTTP 200; lector HTTP 403; publicación idéntica: True",
+      "duracion_ms": 3.242,
+      "detalle": {
+        "antes": "649589d9f52287f952809be0e6349ff93649fbdabe14e7830e0e5c4201c821a7",
+        "despues": "649589d9f52287f952809be0e6349ff93649fbdabe14e7830e0e5c4201c821a7",
+        "log": [
+          {
+            "fecha": "2026-11-14T22:17:51.945778+00:00",
+            "rol": "lector",
+            "permitido": false,
+            "version": "v1"
+          },
+          {
+            "fecha": "2026-11-14T22:17:51.946472+00:00",
+            "rol": "publicador_simulado",
+            "permitido": true,
+            "version": "v1"
+          },
+          {
+            "fecha": "2026-11-14T22:17:51.948986+00:00",
+            "rol": "lector",
+            "permitido": false,
+            "version": "v1"
+          }
+        ]
+      }
+    },
+    "T09": {
+      "resultado": "No ejecutada",
+      "observado": "Sesión de usuario simulado pendiente",
+      "duracion_ms": null,
+      "detalle": null
+    },
+    "T10": {
+      "resultado": "No ejecutada",
+      "observado": "Sesión de usuario simulado pendiente",
+      "duracion_ms": null,
+      "detalle": null
+    },
+    "T11": {
+      "resultado": "Fallida",
+      "observado": "P025 rechazada por calendario: False; misma vista: True",
+      "duracion_ms": 1.543,
+      "detalle": {
+        "sha256_vista": "2c3fbe5a1e9081d4fb6f28052ca87a2ac298dab6c34c14327b0d066fdb32f0a2",
+        "regla": "versiones/v1.py"
+      }
+    },
+    "T12": {
+      "resultado": "Fallida",
+      "observado": "totales iguales al oráculo: False; rechazos: 4; lector HTTP 403",
+      "duracion_ms": 1.116,
+      "detalle": {
+        "totales": [
+          {
+            "distrito": "Cayma",
+            "grupo_etario": "Adulto mayor",
+            "total": 4
+          },
+          {
+            "distrito": "Cayma",
+            "grupo_etario": "Infantil",
+            "total": 4
+          },
+          {
+            "distrito": "Cercado",
+            "grupo_etario": "Adulto mayor",
+            "total": 3
+          },
+          {
+            "distrito": "Cercado",
+            "grupo_etario": "Infantil",
+            "total": 3
+          },
+          {
+            "distrito": "Chivay",
+            "grupo_etario": "Adulto mayor",
+            "total": 3
+          },
+          {
+            "distrito": "Chivay",
+            "grupo_etario": "Infantil",
+            "total": 3
+          },
+          {
+            "distrito": "Yanque",
+            "grupo_etario": "Adulto mayor",
+            "total": 3
+          },
+          {
+            "distrito": "Yanque",
+            "grupo_etario": "Infantil",
+            "total": 3
+          }
+        ],
+        "rechazos": [
+          {
+            "linea": 27,
+            "id": "P026",
+            "motivo": "Campo obligatorio vacío"
+          },
+          {
+            "linea": 28,
+            "id": "P003",
+            "motivo": "ID duplicado"
+          },
+          {
+            "linea": 29,
+            "id": "P028",
+            "motivo": "Campo obligatorio vacío"
+          },
+          {
+            "linea": 30,
+            "id": "P029",
+            "motivo": "Fecha inválida"
+          }
+        ],
+        "lector": 403
+      }
+    }
+  }
+}
