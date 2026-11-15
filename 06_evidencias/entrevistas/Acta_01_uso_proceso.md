@@ -9,3 +9,9 @@
 | ¿Qué revisión de otra persona quedó registrada y qué falta por cerrar? | Pendiente | Registro de revisión | Pendiente |
 
 Conclusión, conformidad/desacuerdo, acuerdos y confirmaciones: pendientes.
+
+## Datos precargados para corroborar
+
+Nota para corroborar en la entrevista: el plan define F1 como captura y validación, y F2 como consolidación, visualización y publicación local. El piloto usa 30 registros sintéticos. El cambio técnico entre cortes incorpora la validación del calendario.
+
+Completar con las respuestas de los participantes sobre qué control difiere entre F1 y F2, qué pruebas se repitieron y qué revisión quedó registrada. La decisión de aprobación del estándar requiere el nombre del revisor, la versión revisada y su confirmación.
