@@ -195,7 +195,9 @@
       "observado": "P026 corregido a Chivay. Total: 25 aceptados y 5 rechazados.",
       "duracion_ms": 58000,
       "detalle": {
-        "fuente": "Resultado aportado y confirmado para el registro del equipo."
+        "fuente": "Resultado aportado y confirmado para el registro del equipo.",
+        "evidencia_id": "E33",
+        "captura": "06_evidencias/pruebas_usuario/T09_p026_corregido.png"
       }
     },
     "T10": {
@@ -203,7 +205,9 @@
       "observado": "Muestra original recargada. Chivay: 6 registros, 3 por grupo.",
       "duracion_ms": 43000,
       "detalle": {
-        "fuente": "Resultado aportado y confirmado para el registro del equipo."
+        "fuente": "Resultado aportado y confirmado para el registro del equipo.",
+        "evidencia_id": "E34",
+        "captura": "06_evidencias/pruebas_usuario/T10_resumen_chivay.png"
       }
     },
     "T11": {

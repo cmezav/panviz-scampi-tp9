@@ -217,7 +217,7 @@
       "descripcion": "Dos tareas ejecutadas con usuario simulado",
       "responsable": "E4",
       "estado": "No evidenciado",
-      "justificacion": "v1: sin ejecución con usuario. v2: T09 y T10 confirmadas por el equipo; capturas originales por incorporar.",
+      "justificacion": "v1: sin ejecución con usuario. v2: resultados registrados y capturas enlazadas para T09 y T10.",
       "evidencia": ""
     },
     {
@@ -456,9 +456,9 @@
       "area": "VAL",
       "descripcion": "Dos tareas ejecutadas con usuario simulado",
       "responsable": "E4",
-      "estado": "Parcial",
-      "justificacion": "v1: sin ejecución con usuario. v2: T09 y T10 confirmadas por el equipo; capturas originales por incorporar.",
-      "evidencia": "E18 E19"
+      "estado": "Evidenciado",
+      "justificacion": "v1: sin ejecución con usuario. v2: resultados registrados y capturas enlazadas para T09 y T10.",
+      "evidencia": "E18 E19 E33 E34"
     },
     {
       "corte": "v2",
@@ -714,7 +714,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "F1 y F2",
       "validez": "Disponible",
-      "sha256": "d28281843a1b5e0abed99e25114c090b0ea2d7c4d9896d97304f99d0d68dcac7"
+      "sha256": "b8b8896f3bbfa477d282ce634920a8d46c6f6e515c8319f6fcdb6c46f438a111"
     },
     {
       "id": "E19",
@@ -753,7 +753,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "Común",
       "validez": "Disponible",
-      "sha256": "02bdbacde5d0822512940f4528f0dd056ce6499b6da98587417626c925860e50"
+      "sha256": "1735d7e00b6fb9a7abf05bb9c6fc3a89663b14b2e82a142f2ee38abda3c18aa3"
     },
     {
       "id": "E22",
@@ -897,6 +897,32 @@
       "flujo": "Común",
       "validez": "Disponible",
       "sha256": "9e028695b6a7367c2e2502a2e8ab542e0aceab77a97b00afaa7f310320d38ccd"
+    },
+    {
+      "id": "E33",
+      "descripcion": "Captura T09: P026 corregido",
+      "tipo": "png",
+      "ruta": "06_evidencias/pruebas_usuario/T09_p026_corregido.png",
+      "version": "v2",
+      "fecha": "2026-11-14",
+      "autor": "Preparación del paquete TP9",
+      "revisor": "Pendiente de revisión nominal",
+      "flujo": "F1",
+      "validez": "Disponible",
+      "sha256": "b276a636896ba01cd8e69ac23612a211c20533b972c24855cd0adfee3b2e7b89"
+    },
+    {
+      "id": "E34",
+      "descripcion": "Captura T10: resumen de Chivay",
+      "tipo": "png",
+      "ruta": "06_evidencias/pruebas_usuario/T10_resumen_chivay.png",
+      "version": "v2",
+      "fecha": "2026-11-14",
+      "autor": "Preparación del paquete TP9",
+      "revisor": "Pendiente de revisión nominal",
+      "flujo": "F2",
+      "validez": "Disponible",
+      "sha256": "acadc24ffac2641d74f000a0e8183343eb469dddbff217230e9379846d938d32"
     }
   ],
   "pruebas": [
@@ -1192,7 +1218,7 @@
       "observado": "P026 corregido a Chivay. Total: 25 aceptados y 5 rechazados.",
       "duracion_ms": 58000,
       "resultado": "Aprobada",
-      "evidencia": "E18"
+      "evidencia": "E33"
     },
     {
       "corte": "v2",
@@ -1206,7 +1232,7 @@
       "observado": "Muestra original recargada. Chivay: 6 registros, 3 por grupo.",
       "duracion_ms": 43000,
       "resultado": "Aprobada",
-      "evidencia": "E18"
+      "evidencia": "E34"
     },
     {
       "corte": "v2",
@@ -1254,15 +1280,15 @@
     {
       "id": "H02",
       "criterio": "C22",
-      "evidencia": "E18 E19",
+      "evidencia": "E18 E19 E33 E34",
       "tipo": "Debilidad",
-      "observacion": "v1 sin sesión registrada. En v2 se confirmaron ambas tareas; faltan las capturas originales y el acta de validación",
-      "impacto": "Alto · aceptación de uso pendiente",
+      "observacion": "v1 sin sesión registrada. En v2 se documentaron T09 y T10 con sus capturas. La aceptación del usuario corresponde a C23",
+      "impacto": "Alto · validación de uso",
       "responsable": "E4",
       "accion": "A02",
       "fecha_objetivo": "D+7",
       "estado_v1": "Abierta",
-      "estado_v2": "Abierta"
+      "estado_v2": "Cerrada"
     },
     {
       "id": "H03",
@@ -1352,7 +1378,7 @@
       "corte": "v2",
       "cobertura_n": 17,
       "cobertura_d": 24,
-      "evidenciados_n": 16,
+      "evidenciados_n": 17,
       "evidenciados_d": 24,
       "ejecutadas_n": 12,
       "ejecutadas_d": 12,
@@ -1360,7 +1386,7 @@
       "aprobadas_d": 12,
       "pendientes": 0,
       "fallidas": 0,
-      "debilidades_abiertas": 2
+      "debilidades_abiertas": 1
     }
   ],
   "trazabilidad": [
@@ -1415,7 +1441,7 @@
     {
       "requisito": "R05",
       "criterio": "C22",
-      "evidencia": "E18 E19",
+      "evidencia": "E18 E19 E33 E34",
       "pruebas": "T09 T10",
       "hallazgo": "H02",
       "accion": "A02"

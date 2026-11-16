@@ -40,9 +40,11 @@ EVIDENCE = [
  ("E30","Registro de revisión cruzada","06_evidencias/revision_cruzada/registro.md","Común"),
  ("E31","Verificación de la herramienta","07_tablero/herramienta.md","Común"),
  ("E32","Plan de acopio e indexación","06_evidencias/acopio.md","Común"),
+ ("E33","Captura T09: P026 corregido","06_evidencias/pruebas_usuario/T09_p026_corregido.png","F1"),
+ ("E34","Captura T10: resumen de Chivay","06_evidencias/pruebas_usuario/T10_resumen_chivay.png","F2"),
 ]
 PENDING = {"E27", "E29", "E30"}
-V2_ONLY = {"E05","E12","E18","E26","E28"}
+V2_ONLY = {"E05","E12","E18","E26","E28","E33","E34"}
 V1_ONLY = {"E11","E17","E25"}
 CRITERIA = [
  ("OPD","E1","Estándar y plantillas versionados","E02 E04","E02 E04","E","E","Proceso y tres plantillas localizables."),
@@ -66,7 +68,7 @@ CRITERIA = [
  ("VER","E4","Revisión por pares de evidencia de verificación","","","N","N","Falta revisión humana del log y los pasos."),
  ("VER","E4","Regresión posterior al cambio aprobada","E17","E18 E28","N","E","T12 falla en la base experimental y pasa tras el cambio."),
  ("VAL","E4","Protocolo con dos escenarios y condiciones de observación","E19","E19","E","E","Tareas, cronometraje, condiciones y criterio de aceptación definidos."),
- ("VAL","E4","Dos tareas ejecutadas con usuario simulado","","E18 E19","N","P","v1: sin ejecución con usuario. v2: T09 y T10 confirmadas por el equipo; capturas originales por incorporar."),
+ ("VAL","E4","Dos tareas ejecutadas con usuario simulado","","E18 E19 E33 E34","N","E","v1: sin ejecución con usuario. v2: resultados registrados y capturas enlazadas para T09 y T10."),
  ("VAL","E4","Usuario y revisor corroboran el resultado","","","N","N","No existe un acta confirmada por participantes."),
  ("VAL","E4","Seguimiento de aceptación y adopción en ciclos posteriores","","","X","X","La muestra cubre un piloto; falta observación de ciclos posteriores."),
 ]
@@ -77,7 +79,7 @@ LINKS = [
  ("R03","C10","E09 E17 E18","T02","H01","A01"),
  ("R03","C18","E16 E17 E18","T04","H04","A03"),
  ("R04","C14","E07 E13 E17 E18","T07 T08","H03","A03"),
- ("R05","C22","E18 E19","T09 T10","H02","A02"),
+ ("R05","C22","E18 E19 E33 E34","T09 T10","H02","A02"),
  ("R06","C20","E05 E17 E18 E28","T11 T12","H01","A01"),
 ]
 STATES = {"E":"Evidenciado","P":"Parcial","N":"No evidenciado","X":"No evaluable"}
@@ -127,8 +129,11 @@ def generate():
         test_list=[]
         for row in cases:
             t=tests[v]["pruebas"][row["id"]]
+            evidence_id = "E19" if t["resultado"] == "No ejecutada" else "E17" if v == "v1" else "E18"
+            if row["id"] in {"T09", "T10"} and isinstance(t.get("detalle"), dict):
+                evidence_id = t["detalle"].get("evidencia_id") or evidence_id
             test_list.append(dict(corte=v,**row,observado=t["observado"],duracion_ms=t["duracion_ms"],
-                                  resultado=t["resultado"],evidencia="E19" if t["resultado"]=="No ejecutada" else "E17" if v=="v1" else "E18"))
+                                  resultado=t["resultado"],evidencia=evidence_id))
         all_tests.extend(test_list)
         cnt=lambda tag: sum(r["resultado"]==tag for r in test_list)
         done=len(test_list)-cnt("No ejecutada")
