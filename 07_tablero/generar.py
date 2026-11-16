@@ -53,7 +53,7 @@ V1_ONLY = {"E11","E17","E25"}
 CRITERIA = [
  ("OPD","E1","Estándar y plantillas versionados","E02 E04","E02 E04","E","E","Proceso y tres plantillas localizables."),
  ("OPD","E1","Estándar aplicado en ambos flujos","E03 E13","E03 E13","E","E","Flujos comparten controles y tienen adaptación documentada."),
- ("OPD","E1","Revisión y aprobación del estándar por otro integrante","","E02 E27 E30","N","P","v1: sin aprobación registrada. v2: conformidad condicionada de Gabriela y revisión cruzada documentada; falta la aprobación definitiva."),
+ ("OPD","E1","Revisión y aprobación del estándar por otro integrante","","E02 E27 E30","N","E","v1: sin aprobación registrada. v2: Cielo aprobó el estándar con observaciones y se incorporó el ajuste documental, con E30 como respaldo."),
  ("OPD","E1","Lección incorporada al proceso revisado","","E05 E28","N","E","Antes no se incorporaba la lección. Después se registra el caso negativo y la regresión."),
  ("IPM","E1","Plan integrado con alcance y roles","E01 E20","E01 E20","E","E","Plan y roles propuestos explícitos; aprobación se verifica en C07."),
  ("IPM","E1","Adaptación aplicada a captura y consolidación","E03 E17","E03 E18","E","E","Los resultados permiten verificar ejecución de ambos flujos."),

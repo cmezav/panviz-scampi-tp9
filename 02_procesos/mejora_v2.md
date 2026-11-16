@@ -4,4 +4,4 @@ La regla experimental v1 solo exigía el formato de fecha. Con la misma muestra 
 
 **Lección de verificación.** Un cambio en una regla del catálogo incluye caso positivo, límite y negativo del dominio, además de la regresión del flujo consumidor. Conservar referencia esperada, resultado observado, versión y entorno.
 
-**CR09-01.** Motivo: falla inducida observada en T01, T02, T11 y T12. Implementación: v2 añade comprobación de calendario. Revisión humana y aprobación del estándar: pendientes. El experimento y el parche son reproducibles.
+**CR09-01.** Motivo: falla inducida observada en T01, T02, T11 y T12. Implementación: v2 añade comprobación de calendario. El [contraste de Michael](../06_evidencias/revision_cruzada/registro.md#contraste-de-resultados-para-cerrar-a01) respalda el cierre de A01. La [aprobación del estándar](estandar_v1.md#aprobación-del-estándar-v1-para-el-piloto) quedó registrada para el piloto. El experimento y el parche son reproducibles.

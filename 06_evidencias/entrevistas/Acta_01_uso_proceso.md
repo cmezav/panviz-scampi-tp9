@@ -16,3 +16,5 @@
 **Decisión de Gabriela:** conformidad condicionada a incorporar las actas y la evidencia de revisión cruzada. E27 y E29 quedan documentadas. Falta E30 y sigue pendiente la aprobación definitiva por otra persona.
 
 **Seguimiento:** incorporar los resultados y respaldos de E30 y registrar quién revisó y aprobó el estándar, qué versión revisó y en qué fecha.
+
+**Seguimiento:** después de documentar [E30](../revision_cruzada/registro.md), Cielo aprobó el [estándar v1](../../02_procesos/estandar_v1.md) para el piloto con observaciones documentales atendidas.

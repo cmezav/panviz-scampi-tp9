@@ -1,7 +1,7 @@
 ﻿corte,id,area,descripcion,responsable,estado,justificacion,evidencia
 v1,C01,OPD,Estándar y plantillas versionados,E1,Evidenciado,Proceso y tres plantillas localizables.,E02 E04
 v1,C02,OPD,Estándar aplicado en ambos flujos,E1,Evidenciado,Flujos comparten controles y tienen adaptación documentada.,E03 E13
-v1,C03,OPD,Revisión y aprobación del estándar por otro integrante,E1,No evidenciado,v1: sin aprobación registrada. v2: conformidad condicionada de Gabriela y revisión cruzada documentada; falta la aprobación definitiva.,
+v1,C03,OPD,Revisión y aprobación del estándar por otro integrante,E1,No evidenciado,"v1: sin aprobación registrada. v2: Cielo aprobó el estándar con observaciones y se incorporó el ajuste documental, con E30 como respaldo.",
 v1,C04,OPD,Lección incorporada al proceso revisado,E1,No evidenciado,Antes no se incorporaba la lección. Después se registra el caso negativo y la regresión.,
 v1,C05,IPM,Plan integrado con alcance y roles,E1,Evidenciado,Plan y roles propuestos explícitos; aprobación se verifica en C07.,E01 E20
 v1,C06,IPM,Adaptación aplicada a captura y consolidación,E1,Evidenciado,Los resultados permiten verificar ejecución de ambos flujos.,E03 E17
@@ -25,7 +25,7 @@ v1,C23,VAL,Usuario y revisor corroboran el resultado,E4,No evidenciado,v1: sin a
 v1,C24,VAL,Seguimiento de aceptación y adopción en ciclos posteriores,E4,No evaluable,La muestra cubre un piloto; falta observación de ciclos posteriores.,
 v2,C01,OPD,Estándar y plantillas versionados,E1,Evidenciado,Proceso y tres plantillas localizables.,E02 E04
 v2,C02,OPD,Estándar aplicado en ambos flujos,E1,Evidenciado,Flujos comparten controles y tienen adaptación documentada.,E03 E13
-v2,C03,OPD,Revisión y aprobación del estándar por otro integrante,E1,Parcial,v1: sin aprobación registrada. v2: conformidad condicionada de Gabriela y revisión cruzada documentada; falta la aprobación definitiva.,E02 E27 E30
+v2,C03,OPD,Revisión y aprobación del estándar por otro integrante,E1,Evidenciado,"v1: sin aprobación registrada. v2: Cielo aprobó el estándar con observaciones y se incorporó el ajuste documental, con E30 como respaldo.",E02 E27 E30
 v2,C04,OPD,Lección incorporada al proceso revisado,E1,Evidenciado,Antes no se incorporaba la lección. Después se registra el caso negativo y la regresión.,E05 E28
 v2,C05,IPM,Plan integrado con alcance y roles,E1,Evidenciado,Plan y roles propuestos explícitos; aprobación se verifica en C07.,E01 E20
 v2,C06,IPM,Adaptación aplicada a captura y consolidación,E1,Evidenciado,Los resultados permiten verificar ejecución de ambos flujos.,E03 E18

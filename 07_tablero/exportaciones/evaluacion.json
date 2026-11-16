@@ -27,7 +27,7 @@
       "descripcion": "Revisión y aprobación del estándar por otro integrante",
       "responsable": "E1",
       "estado": "No evidenciado",
-      "justificacion": "v1: sin aprobación registrada. v2: conformidad condicionada de Gabriela y revisión cruzada documentada; falta la aprobación definitiva.",
+      "justificacion": "v1: sin aprobación registrada. v2: Cielo aprobó el estándar con observaciones y se incorporó el ajuste documental, con E30 como respaldo.",
       "evidencia": ""
     },
     {
@@ -266,8 +266,8 @@
       "area": "OPD",
       "descripcion": "Revisión y aprobación del estándar por otro integrante",
       "responsable": "E1",
-      "estado": "Parcial",
-      "justificacion": "v1: sin aprobación registrada. v2: conformidad condicionada de Gabriela y revisión cruzada documentada; falta la aprobación definitiva.",
+      "estado": "Evidenciado",
+      "justificacion": "v1: sin aprobación registrada. v2: Cielo aprobó el estándar con observaciones y se incorporó el ajuste documental, con E30 como respaldo.",
       "evidencia": "E02 E27 E30"
     },
     {
@@ -506,7 +506,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "Común",
       "validez": "Disponible",
-      "sha256": "1288d2528b226f40a2cf13e923d05fa96da1c29fb7b0278b1800fdbb55f79c04"
+      "sha256": "3419156a8c10e63a5168d1235b105e0a539ca328b9895d6ab993c567972027b9"
     },
     {
       "id": "E03",
@@ -545,7 +545,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "F1 y F2",
       "validez": "Disponible",
-      "sha256": "18f2437dcb4c456dd20a1d07576bdcdc775be0ae13783eeb1ec7aa71d21d7e93"
+      "sha256": "9beb2414d4b95ff12f932fcc438b1481dfff6b9005e931f2ca4f1c03fcd0c1d2"
     },
     {
       "id": "E06",
@@ -753,7 +753,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "Común",
       "validez": "Disponible",
-      "sha256": "84c703c59f33da46f0c0a72ff336b34ac78d7b478cb028f42cf835c30649754c"
+      "sha256": "ad5e0413453668a7059b90dcd270615b02481fe35a34530adbac4f8ed9551d42"
     },
     {
       "id": "E22",
@@ -766,7 +766,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "Común",
       "validez": "Disponible",
-      "sha256": "8bd60b19bd160164d46e5697bc3b8dae4ee00685a9e366d070e615dfbbbdc946"
+      "sha256": "94885da79cb66db2df4e71d5dc8c6da96f7166f13dcd3538a42d2d53f57e9372"
     },
     {
       "id": "E23",
@@ -831,7 +831,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "Común",
       "validez": "Disponible",
-      "sha256": "3f8dc5215698a8f0a9e6ac15d911dbefa9f9c111362c49742b2df83d3250fa4e"
+      "sha256": "d46656e3d032664feec9b8075e815fc84b2481badb03640b02b47c7e151e7edd"
     },
     {
       "id": "E28",
@@ -870,7 +870,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "Común",
       "validez": "Disponible",
-      "sha256": "842cb33c175843a99990c4b77e69daec02607a744f7a679b0777a929a30d9ebf"
+      "sha256": "c25f03cc3e028aa38bff2d266148ed7f048204f747e304afba130a5e60e85a14"
     },
     {
       "id": "E31",
@@ -1319,15 +1319,15 @@
     {
       "id": "H01",
       "criterio": "C10",
-      "evidencia": "E10 E17 E18 E28",
+      "evidencia": "E10 E17 E18 E28 E30",
       "tipo": "Debilidad",
-      "observacion": "En v1 experimental dos fechas imposibles ingresan al consolidado; v2 corrige selección",
+      "observacion": "En v1 experimental dos fechas imposibles ingresan al consolidado; el contraste de las cuatro pruebas y el diff respaldan la corrección de v2",
       "impacto": "Alto · conteo incorrecto",
       "responsable": "E3",
       "accion": "A01",
       "fecha_objetivo": "D+7",
       "estado_v1": "Abierta",
-      "estado_v2": "Corregida técnicamente"
+      "estado_v2": "Cerrada"
     },
     {
       "id": "H02",
@@ -1373,13 +1373,13 @@
       "criterio": "C03",
       "evidencia": "E02 E20 E27 E30",
       "tipo": "Debilidad",
-      "observacion": "Gabriela registró conformidad condicionada y E30 está documentada. Falta la aprobación definitiva",
+      "observacion": "En v2 se documentó la revisión cruzada y Cielo aprobó el estándar con observaciones atendidas",
       "impacto": "Alto · corroboración insuficiente",
       "responsable": "E1",
       "accion": "A02",
       "fecha_objetivo": "D+7",
       "estado_v1": "Abierta",
-      "estado_v2": "Abierta"
+      "estado_v2": "Cerrada"
     }
   ],
   "acciones": [
@@ -1390,7 +1390,7 @@
       "responsable_propuesto": "E3",
       "plazo": "D+7",
       "criterio_de_cierre": "Cuatro pruebas pasan y diff disponible",
-      "estado": "Corregida técnicamente · revisión pendiente"
+      "estado": "Cerrada"
     },
     {
       "id": "A02",
@@ -1399,7 +1399,7 @@
       "responsable_propuesto": "E1 con E4",
       "plazo": "D+7",
       "criterio_de_cierre": "Actas confirmadas y resultados reales de T09 y T10",
-      "estado": "Abierta"
+      "estado": "Cerrada"
     },
     {
       "id": "A03",
@@ -1430,7 +1430,7 @@
       "corte": "v2",
       "cobertura_n": 23,
       "cobertura_d": 24,
-      "evidenciados_n": 21,
+      "evidenciados_n": 22,
       "evidenciados_d": 24,
       "ejecutadas_n": 12,
       "ejecutadas_d": 12,
@@ -1438,7 +1438,7 @@
       "aprobadas_d": 12,
       "pendientes": 0,
       "fallidas": 0,
-      "debilidades_abiertas": 1
+      "debilidades_abiertas": 0
     }
   ],
   "trazabilidad": [

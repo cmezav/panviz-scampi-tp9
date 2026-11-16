@@ -1,4 +1,4 @@
 ﻿id,hallazgo,accion,responsable_propuesto,plazo,criterio_de_cierre,estado
-A01,H01,Aplicar validación de calendario y repetir T01 T02 T11 T12,E3,D+7,Cuatro pruebas pasan y diff disponible,Corregida técnicamente · revisión pendiente
-A02,H02 H05,Confirmar estándar y revisión cruzada; realizar dos entrevistas y dos tareas cronometradas,E1 con E4,D+7,Actas confirmadas y resultados reales de T09 y T10,Abierta
+A01,H01,Aplicar validación de calendario y repetir T01 T02 T11 T12,E3,D+7,Cuatro pruebas pasan y diff disponible,Cerrada
+A02,H02 H05,Confirmar estándar y revisión cruzada; realizar dos entrevistas y dos tareas cronometradas,E1 con E4,D+7,Actas confirmadas y resultados reales de T09 y T10,Cerrada
 A03,H03 H04,Repetir piloto con otra muestra y preparar autenticación antes de ampliar el despliegue,E3 con E5,D+30,Segundo ciclo medido y evidencia de identidad y autorización independiente,Abierta

@@ -14,5 +14,23 @@
 
 - El plan distingue las exclusiones del piloto de los controles de la muestra. Se actualizó su estado de validación humana para enlazar E38 y E29.
 - C11 tiene respaldo parcial en el contraste de R01. C15 cuenta con la revisión de K01–K05. C19 cuenta con la revisión de verificación por Michael e Italo.
-- La aprobación definitiva del estándar (C03) requiere la decisión de la persona que lo revisó. La conformidad de Cielo en este registro corresponde al plan.
-- A01 conserva la revisión pendiente de T02, T11 y T12. Los tres resultados figuran aprobados en v2; el registro de Michael cubre T01, T07 y el diff.
+- Cielo registró una decisión separada sobre el [estándar v1](../../02_procesos/estandar_v1.md): aprobado con observaciones para el piloto.
+- A01 quedó cerrada tras la conformidad técnica de Michael. El detalle del contraste queda registrado abajo.
+
+## Contraste de resultados para cerrar A01
+
+**Michael Suclle · 15/11/2026, 21:15 (hora de Lima) · v2.**
+Se usó la corrección de calendario del [commit 2883441](https://github.com/cmezav/panviz-scampi-tp9/commit/28834415d0097ef3006c3fee58f74297e0d964c1)
+y el [registro de resultados v2](../../05_pruebas/resultados/v2.json).
+
+| Caso | Resultado contrastado |
+|---|---|
+| T01 | Aprobada. Se rechazaron los seis inválidos y se aceptaron 24 registros. |
+| T02 | Aprobada. Seis registros por distrito, tres por grupo etario. |
+| T11 | Aprobada. P025 fue rechazada por calendario y la vista coincidió. |
+| T12 | Aprobada. Totales iguales al oráculo, seis rechazos y HTTP 403 para el rol lector. |
+
+Michael había reportado la repetición de T01 y la revisión del
+[diff de fecha](../../05_pruebas/diff_regla_fecha.txt). Para T02, T11 y T12
+contrastó los resultados consignados en v2.json. Dio su conformidad con
+cerrar técnicamente A01.
