@@ -38,7 +38,7 @@ La suite registra una prueba por ID en cada corte. T03 y T04 conservan las tres 
 
 Capturas de v2: [T09: P026 corregido](06_evidencias/pruebas_usuario/T09_p026_corregido.png) y [T10: resumen de Chivay](06_evidencias/pruebas_usuario/T10_resumen_chivay.png).
 
-v1 es un experimento controlado, no un defecto histórico de PANVIZ. El corte v2 registra 12/12 aprobadas entre 12/12 ejecutadas. Los [aportes nominales](01_plan/aportes.csv) de los cinco integrantes están documentados. Quedan por documentar la comprobación de la herramienta y adjuntar la presentación. Los comandos publican un repositorio nuevo en la cuenta que se autentique.
+v1 es un experimento controlado, no un defecto histórico de PANVIZ. El corte v2 registra 12/12 aprobadas entre 12/12 ejecutadas. Los [aportes nominales](01_plan/aportes.csv) de los cinco integrantes están documentados. Las [comprobaciones funcionales de la herramienta](07_tablero/herramienta.md) están documentadas. Quedan la revisión cronometrada de 20 minutos y la presentación. Los comandos publican un repositorio nuevo en la cuenta que se autentique.
 
 Base conceptual y organización de artefactos: [TP8, repositorio de Gabriela](https://github.com/gbordae/panviz-iras-cmmi/tree/v0.1).
 

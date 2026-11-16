@@ -8,7 +8,7 @@ Alternativa local: LibreOffice Calc (formato ODS, LibreOffice bajo MPL 2.0 y lic
 
 **Acopio.** El formulario local exige criterio, descripción, ruta/enlace y autor. Guarda el borrador por navegador y exporta un CSV. El responsable propuesto consolida esos CSV, valida origen y duplicados y actualiza el índice. Limitación: este formulario no es multiusuario y requiere consolidación explícita. Para importación manual en Calc, abrir un CSV de exportaciones con codificación UTF-8 y separador coma.
 
-**Verificación de preparación.** Se ejecutaron los casos técnicos del API local, el generador de CSV/JSON y la conversión a ODS. La prueba interactiva en navegador y el uso cronometrado por los integrantes se reservan para el equipo; documentar edición, duración real y observaciones en la sesión de cierre.
+**Verificación de preparación.** Se ejecutaron los casos técnicos del API local, el generador de CSV/JSON y la conversión a ODS. Las comprobaciones de navegador reportadas por el equipo se detallan abajo.
 
 
 ## Comprobaciones de acopio y exportación
@@ -22,7 +22,18 @@ Alternativa local: LibreOffice Calc (formato ODS, LibreOffice bajo MPL 2.0 y lic
 | Importar el CSV | La hoja de la captura inicial mostró el texto en una sola columna. En una comprobación aparte se reimportó el mismo archivo en Calc con UTF-8, coma y comillas dobles como delimitador de texto. Se obtuvieron cinco columnas y una fila completa. | El mismo CSV permite repetir la comprobación. |
 | Cambiar de corte | Las capturas muestran v1 y v2 con sus indicadores respectivos. En v2 aparecen 23 de 24 criterios con respaldo, 22 evidenciados y 12 de 12 pruebas aprobadas. | [Tablero v1](../06_evidencias/herramienta/tablero_v1.png) y [tablero v2](../06_evidencias/herramienta/tablero_v2.png). |
 
-**Por verificar:** persistencia del borrador después de F5, filtros de área y responsable, apertura de la evidencia E36 y duración total de la revisión. Los archivos disponibles no permiten confirmar una sesión cronometrada de 20 minutos.
+## Comprobación interactiva complementaria
+
+**Fuente:** resultados reportados por Cielo Meza el 15/11/2026.
+
+| Comprobación | Resultado reportado |
+|---|---|
+| Persistencia después de F5 | El contador de Acopio de aportes conservó el aporte de prueba tras recargar la página. |
+| Filtro de área | En v2, VAL mostró solo los criterios de esa área. Al volver a Todas se restableció la vista. |
+| Filtro de responsable | E4 mostró sus criterios. Los indicadores generales conservaron los totales de v2. |
+| Apertura de E36 | El enlace de T09 abrió la [captura de P026 corregido a Chivay](../06_evidencias/pruebas_usuario/captura_T09_italo.png), con 25 aceptados y 5 rechazados. |
+
+**Duración:** la sesión anterior no se cronometró. El valor de 7 min 20 s se reportó como simulado y queda excluido de la medición. La revisión cronometrada de 20 minutos sigue sin acreditarse.
 
 ## Actualizar las hojas de datos
 
