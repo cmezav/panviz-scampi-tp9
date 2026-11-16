@@ -27,7 +27,7 @@
       "descripcion": "Revisión y aprobación del estándar por otro integrante",
       "responsable": "E1",
       "estado": "No evidenciado",
-      "justificacion": "v1: sin aprobación registrada. v2: conformidad condicionada de Gabriela; falta E30 y la aprobación definitiva por otra persona.",
+      "justificacion": "v1: sin aprobación registrada. v2: conformidad condicionada de Gabriela y revisión cruzada documentada; falta la aprobación definitiva.",
       "evidencia": ""
     },
     {
@@ -67,7 +67,7 @@
       "descripcion": "Revisión del plan y resolución de discrepancias",
       "responsable": "E1",
       "estado": "No evidenciado",
-      "justificacion": "Acta de revisión e interacción del equipo pendientes.",
+      "justificacion": "v1: sin revisión documentada. v2: Cielo revisó el alcance y se actualizó el estado de la validación en el plan.",
       "evidencia": ""
     },
     {
@@ -107,7 +107,7 @@
       "descripcion": "Requisitos contrastados por otro integrante",
       "responsable": "E2",
       "estado": "No evidenciado",
-      "justificacion": "Falta revisión nominal de requisitos y trazabilidad.",
+      "justificacion": "v1: sin revisión documentada. v2: Rodrigo contrastó R01; la revisión documentada cubre ese requisito.",
       "evidencia": ""
     },
     {
@@ -147,7 +147,7 @@
       "descripcion": "Riesgos revisados por otra persona",
       "responsable": "E2",
       "estado": "No evidenciado",
-      "justificacion": "Falta revisión cruzada registrada.",
+      "justificacion": "v1: sin revisión documentada. v2: Rodrigo contrastó las respuestas y responsables de K01 a K05.",
       "evidencia": ""
     },
     {
@@ -187,7 +187,7 @@
       "descripcion": "Revisión por pares de evidencia de verificación",
       "responsable": "E4",
       "estado": "No evidenciado",
-      "justificacion": "Falta revisión humana del log y los pasos.",
+      "justificacion": "v1: sin revisión documentada. v2: Michael contrastó T01 y T07 y revisó el diff; Italo contrastó los indicadores.",
       "evidencia": ""
     },
     {
@@ -267,8 +267,8 @@
       "descripcion": "Revisión y aprobación del estándar por otro integrante",
       "responsable": "E1",
       "estado": "Parcial",
-      "justificacion": "v1: sin aprobación registrada. v2: conformidad condicionada de Gabriela; falta E30 y la aprobación definitiva por otra persona.",
-      "evidencia": "E02 E27"
+      "justificacion": "v1: sin aprobación registrada. v2: conformidad condicionada de Gabriela y revisión cruzada documentada; falta la aprobación definitiva.",
+      "evidencia": "E02 E27 E30"
     },
     {
       "corte": "v2",
@@ -306,9 +306,9 @@
       "area": "IPM",
       "descripcion": "Revisión del plan y resolución de discrepancias",
       "responsable": "E1",
-      "estado": "No evidenciado",
-      "justificacion": "Acta de revisión e interacción del equipo pendientes.",
-      "evidencia": ""
+      "estado": "Evidenciado",
+      "justificacion": "v1: sin revisión documentada. v2: Cielo revisó el alcance y se actualizó el estado de la validación en el plan.",
+      "evidencia": "E01 E30 E38"
     },
     {
       "corte": "v2",
@@ -346,9 +346,9 @@
       "area": "RD",
       "descripcion": "Requisitos contrastados por otro integrante",
       "responsable": "E2",
-      "estado": "No evidenciado",
-      "justificacion": "Falta revisión nominal de requisitos y trazabilidad.",
-      "evidencia": ""
+      "estado": "Parcial",
+      "justificacion": "v1: sin revisión documentada. v2: Rodrigo contrastó R01; la revisión documentada cubre ese requisito.",
+      "evidencia": "E06 E30"
     },
     {
       "corte": "v2",
@@ -386,9 +386,9 @@
       "area": "RSKM",
       "descripcion": "Riesgos revisados por otra persona",
       "responsable": "E2",
-      "estado": "No evidenciado",
-      "justificacion": "Falta revisión cruzada registrada.",
-      "evidencia": ""
+      "estado": "Evidenciado",
+      "justificacion": "v1: sin revisión documentada. v2: Rodrigo contrastó las respuestas y responsables de K01 a K05.",
+      "evidencia": "E07 E30"
     },
     {
       "corte": "v2",
@@ -426,9 +426,9 @@
       "area": "VER",
       "descripcion": "Revisión por pares de evidencia de verificación",
       "responsable": "E4",
-      "estado": "No evidenciado",
-      "justificacion": "Falta revisión humana del log y los pasos.",
-      "evidencia": ""
+      "estado": "Evidenciado",
+      "justificacion": "v1: sin revisión documentada. v2: Michael contrastó T01 y T07 y revisó el diff; Italo contrastó los indicadores.",
+      "evidencia": "E18 E28 E30"
     },
     {
       "corte": "v2",
@@ -493,7 +493,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "Común",
       "validez": "Disponible",
-      "sha256": "08ef09bd95aae59e0c263cde2d298445e2ab71d8ec8bf88f709ed6b5708df995"
+      "sha256": "6b8bcf0f6de81f627f3e6fd7a0f370fb528b635ca56b83419c516f4d50176260"
     },
     {
       "id": "E02",
@@ -753,7 +753,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "Común",
       "validez": "Disponible",
-      "sha256": "25bbe5e34cd0415ea48b247175201650cb85eb7291d5feed6974fa38828e0366"
+      "sha256": "84c703c59f33da46f0c0a72ff336b34ac78d7b478cb028f42cf835c30649754c"
     },
     {
       "id": "E22",
@@ -869,8 +869,8 @@
       "autor": "Preparación del paquete TP9",
       "revisor": "Pendiente de revisión nominal",
       "flujo": "Común",
-      "validez": "Plantilla pendiente",
-      "sha256": "fb14c144e60e2fab39f2bd1287734144e528c29003307dd5e86ee70d5e02a315"
+      "validez": "Disponible",
+      "sha256": "842cb33c175843a99990c4b77e69daec02607a744f7a679b0777a929a30d9ebf"
     },
     {
       "id": "E31",
@@ -1371,9 +1371,9 @@
     {
       "id": "H05",
       "criterio": "C03",
-      "evidencia": "E02 E20 E27",
+      "evidencia": "E02 E20 E27 E30",
       "tipo": "Debilidad",
-      "observacion": "Gabriela registró conformidad condicionada; falta E30 y la aprobación definitiva",
+      "observacion": "Gabriela registró conformidad condicionada y E30 está documentada. Falta la aprobación definitiva",
       "impacto": "Alto · corroboración insuficiente",
       "responsable": "E1",
       "accion": "A02",
@@ -1428,9 +1428,9 @@
     },
     {
       "corte": "v2",
-      "cobertura_n": 19,
+      "cobertura_n": 23,
       "cobertura_d": 24,
-      "evidenciados_n": 18,
+      "evidenciados_n": 21,
       "evidenciados_d": 24,
       "ejecutadas_n": 12,
       "ejecutadas_d": 12,

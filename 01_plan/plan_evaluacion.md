@@ -8,7 +8,7 @@
 
 **Tres decisiones de la lectura aplicada.** (1) §2.2: diagnóstico formativo de baja formalidad, alcance acotado y sin calificación de madurez. (2) §2.3, tabla 2: preparar inventario, examinar, documentar y verificar artefactos, confirmar hallazgos preliminares, reportar y archivar. (3) §2.4: fijar muestra y cobertura antes de ejecutar, seleccionar de forma intencional por riesgo y declarar por qué los resultados no se generalizan.
 
-**Levantamiento.** Acordar estándar y alcance, recoger artefactos, repetir pruebas, revisar evidencia por otra persona, contrastar dos entrevistas de cinco minutos, registrar discrepancias y decidir hallazgos. Guardar versión, fecha, autor real, revisor, resultado y ruta. La validación humana está pendiente.
+**Levantamiento.** Acordar estándar y alcance, recoger artefactos, repetir pruebas, revisar evidencia por otra persona, contrastar dos entrevistas de cinco minutos, registrar discrepancias y decidir hallazgos. Guardar versión, fecha, autor real, revisor, resultado y ruta. La validación humana de v2 consta en la [sesión E38](../06_evidencias/pruebas_usuario/sesion_2026-11-15.md) y la [aceptación de Italo](../06_evidencias/entrevistas/Acta_02_validacion.md).
 
 **Confidencialidad.** Solo identificadores sintéticos. Excluir datos de pacientes, cuentas reales, credenciales y contactos de capturas y actas. Desidentificar registros de entrevista antes de compartirlos. El prototipo corre en localhost.
 

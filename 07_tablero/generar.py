@@ -47,29 +47,29 @@ EVIDENCE = [
  ("E37","T10: resumen de Chivay en la repetición","06_evidencias/pruebas_usuario/captura_T10_italo_repeticion.png","F2"),
  ("E38","Registro de la sesión cronometrada","06_evidencias/pruebas_usuario/sesion_2026-11-15.md","F1 y F2"),
 ]
-PENDING = {"E30"}
+PENDING = set()
 V2_ONLY = {"E05","E12","E18","E26","E28","E33","E34","E36","E37","E38"}
 V1_ONLY = {"E11","E17","E25"}
 CRITERIA = [
  ("OPD","E1","Estándar y plantillas versionados","E02 E04","E02 E04","E","E","Proceso y tres plantillas localizables."),
  ("OPD","E1","Estándar aplicado en ambos flujos","E03 E13","E03 E13","E","E","Flujos comparten controles y tienen adaptación documentada."),
- ("OPD","E1","Revisión y aprobación del estándar por otro integrante","","E02 E27","N","P","v1: sin aprobación registrada. v2: conformidad condicionada de Gabriela; falta E30 y la aprobación definitiva por otra persona."),
+ ("OPD","E1","Revisión y aprobación del estándar por otro integrante","","E02 E27 E30","N","P","v1: sin aprobación registrada. v2: conformidad condicionada de Gabriela y revisión cruzada documentada; falta la aprobación definitiva."),
  ("OPD","E1","Lección incorporada al proceso revisado","","E05 E28","N","E","Antes no se incorporaba la lección. Después se registra el caso negativo y la regresión."),
  ("IPM","E1","Plan integrado con alcance y roles","E01 E20","E01 E20","E","E","Plan y roles propuestos explícitos; aprobación se verifica en C07."),
  ("IPM","E1","Adaptación aplicada a captura y consolidación","E03 E17","E03 E18","E","E","Los resultados permiten verificar ejecución de ambos flujos."),
- ("IPM","E1","Revisión del plan y resolución de discrepancias","","","N","N","Acta de revisión e interacción del equipo pendientes."),
+ ("IPM","E1","Revisión del plan y resolución de discrepancias","","E01 E30 E38","N","E","v1: sin revisión documentada. v2: Cielo revisó el alcance y se actualizó el estado de la validación en el plan."),
  ("IPM","E5","Seguimiento integrado antes y después","E17 E24","E17 E18 E24","P","E","En v1 existe un corte; v2 incorpora comparación reproducible."),
  ("RD","E2","Seis requisitos medibles vinculados a pruebas","E06 E15","E06 E15","E","E","Cada requisito apunta a una prueba observable."),
  ("RD","E2","Resultados cumplen aceptación funcional de datos","E09 E10 E17","E09 E10 E18","P","E","v1: 4/6 motivos coinciden y consolidado difiere. v2: 6/6 y totales exactos."),
- ("RD","E2","Requisitos contrastados por otro integrante","","","N","N","Falta revisión nominal de requisitos y trazabilidad."),
+ ("RD","E2","Requisitos contrastados por otro integrante","","E06 E30","N","P","v1: sin revisión documentada. v2: Rodrigo contrastó R01; la revisión documentada cubre ese requisito."),
  ("RD","E2","Mejora mantiene trazabilidad hacia oráculo y regla","E06 E10 E17","E06 E10 E18 E28","P","E","v1 describe regla pero no satisface el calendario; v2 incorpora corrección."),
  ("RSKM","E2","Cinco riesgos con respuesta y rol responsable","E07","E07","E","E","Cinco disparadores, responsables propuestos y respuestas."),
  ("RSKM","E4","Controles de fecha y publicación ejecutados","E07 E17","E07 E18","P","E","Control local de permiso en ambas; calendario falla en v1."),
- ("RSKM","E2","Riesgos revisados por otra persona","","","N","N","Falta revisión cruzada registrada."),
+ ("RSKM","E2","Riesgos revisados por otra persona","","E07 E30","N","E","v1: sin revisión documentada. v2: Rodrigo contrastó las respuestas y responsables de K01 a K05."),
  ("RSKM","E2","Cambio y riesgo tienen una acción seguida","E21 E22","E05 E21 E22","P","E","El riesgo de fecha pasa de reproducido a corregido; otros se mantienen abiertos."),
  ("VER","E4","Plan con 12 casos y esperado independiente","E09 E10 E15","E09 E10 E15","E","E","Hay dos casos para cada característica."),
  ("VER","E4","Suite técnica ejecutada con evidencia reproducible","E16 E17","E16 E18","E","E","Diez casos técnicos ejecutados por versión, incluidos los fallidos."),
- ("VER","E4","Revisión por pares de evidencia de verificación","","","N","N","Falta revisión humana del log y los pasos."),
+ ("VER","E4","Revisión por pares de evidencia de verificación","","E18 E28 E30","N","E","v1: sin revisión documentada. v2: Michael contrastó T01 y T07 y revisó el diff; Italo contrastó los indicadores."),
  ("VER","E4","Regresión posterior al cambio aprobada","E17","E18 E28","N","E","T12 falla en la base experimental y pasa tras el cambio."),
  ("VAL","E4","Protocolo con dos escenarios y condiciones de observación","E19","E19","E","E","Tareas, cronometraje, condiciones y criterio de aceptación definidos."),
  ("VAL","E4","Dos tareas ejecutadas con usuario simulado","","E18 E19 E36 E37 E38","N","E","v1: sin ejecución con usuario. v2: Italo completó ambas tareas sin ayuda con Michael como cronometrador."),
