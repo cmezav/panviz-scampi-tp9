@@ -9,4 +9,4 @@
 | Validación | Versión probada | Observar tareas sin ayuda y contrastar entrevistas | Actas y decisión del usuario | E4 | E1 |
 | Consolidación | Evidencia y resultados | Corroborar hallazgos, recalcular y decidir acciones | Índice, informe y tablero | E1/E5 | E1 |
 
-Git registra código, reglas y cambios. Convención R01–R06, C01–C24, E01–E31, T01–T12, Hxx, Axx. Cada cambio registra motivo, versión, verificación, revisión y aprobación con fechas reales. Aprobación del equipo y revisiones nominales pendientes.
+Git registra código, reglas y cambios. Convención R01–R06, C01–C24, E01–E31, T01–T12, Hxx, Axx. Cada cambio registra motivo, versión, verificación, revisión y aprobación con fechas reales. Gabriela registró su conformidad condicionada en el [Acta 01](../06_evidencias/entrevistas/Acta_01_uso_proceso.md). La aprobación definitiva sigue pendiente de la revisión cruzada E30 y de la decisión de otra persona sobre esta versión.

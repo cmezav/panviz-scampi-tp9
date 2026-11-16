@@ -27,7 +27,7 @@
       "descripcion": "Revisión y aprobación del estándar por otro integrante",
       "responsable": "E1",
       "estado": "No evidenciado",
-      "justificacion": "Falta corroboración y aprobación registradas.",
+      "justificacion": "v1: sin aprobación registrada. v2: conformidad condicionada de Gabriela; falta E30 y la aprobación definitiva por otra persona.",
       "evidencia": ""
     },
     {
@@ -266,9 +266,9 @@
       "area": "OPD",
       "descripcion": "Revisión y aprobación del estándar por otro integrante",
       "responsable": "E1",
-      "estado": "No evidenciado",
-      "justificacion": "Falta corroboración y aprobación registradas.",
-      "evidencia": ""
+      "estado": "Parcial",
+      "justificacion": "v1: sin aprobación registrada. v2: conformidad condicionada de Gabriela; falta E30 y la aprobación definitiva por otra persona.",
+      "evidencia": "E02 E27"
     },
     {
       "corte": "v2",
@@ -506,7 +506,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "Común",
       "validez": "Disponible",
-      "sha256": "4b5b283253c79fe2498dde82fb1c8dfdf650166fd2cc945b25ae1eb187ef2154"
+      "sha256": "1288d2528b226f40a2cf13e923d05fa96da1c29fb7b0278b1800fdbb55f79c04"
     },
     {
       "id": "E03",
@@ -753,7 +753,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "Común",
       "validez": "Disponible",
-      "sha256": "013892a6c19ae16fe358deafb95bf70b5f3992d2f12ed1ef7412acd96c42c998"
+      "sha256": "25bbe5e34cd0415ea48b247175201650cb85eb7291d5feed6974fa38828e0366"
     },
     {
       "id": "E22",
@@ -830,8 +830,8 @@
       "autor": "Preparación del paquete TP9",
       "revisor": "Pendiente de revisión nominal",
       "flujo": "Común",
-      "validez": "Plantilla pendiente",
-      "sha256": "442e050ccb0770e76ee923c9597179d088e97188cc7839f1c7de5e3c3ac5969f"
+      "validez": "Disponible",
+      "sha256": "3f8dc5215698a8f0a9e6ac15d911dbefa9f9c111362c49742b2df83d3250fa4e"
     },
     {
       "id": "E28",
@@ -1371,9 +1371,9 @@
     {
       "id": "H05",
       "criterio": "C03",
-      "evidencia": "E02 E20",
+      "evidencia": "E02 E20 E27",
       "tipo": "Debilidad",
-      "observacion": "No consta aprobación nominal del estándar ni revisión cruzada",
+      "observacion": "Gabriela registró conformidad condicionada; falta E30 y la aprobación definitiva",
       "impacto": "Alto · corroboración insuficiente",
       "responsable": "E1",
       "accion": "A02",
@@ -1428,7 +1428,7 @@
     },
     {
       "corte": "v2",
-      "cobertura_n": 18,
+      "cobertura_n": 19,
       "cobertura_d": 24,
       "evidenciados_n": 18,
       "evidenciados_d": 24,

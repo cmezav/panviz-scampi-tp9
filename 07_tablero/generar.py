@@ -47,13 +47,13 @@ EVIDENCE = [
  ("E37","T10: resumen de Chivay en la repetición","06_evidencias/pruebas_usuario/captura_T10_italo_repeticion.png","F2"),
  ("E38","Registro de la sesión cronometrada","06_evidencias/pruebas_usuario/sesion_2026-11-15.md","F1 y F2"),
 ]
-PENDING = {"E27", "E30"}
+PENDING = {"E30"}
 V2_ONLY = {"E05","E12","E18","E26","E28","E33","E34","E36","E37","E38"}
 V1_ONLY = {"E11","E17","E25"}
 CRITERIA = [
  ("OPD","E1","Estándar y plantillas versionados","E02 E04","E02 E04","E","E","Proceso y tres plantillas localizables."),
  ("OPD","E1","Estándar aplicado en ambos flujos","E03 E13","E03 E13","E","E","Flujos comparten controles y tienen adaptación documentada."),
- ("OPD","E1","Revisión y aprobación del estándar por otro integrante","","","N","N","Falta corroboración y aprobación registradas."),
+ ("OPD","E1","Revisión y aprobación del estándar por otro integrante","","E02 E27","N","P","v1: sin aprobación registrada. v2: conformidad condicionada de Gabriela; falta E30 y la aprobación definitiva por otra persona."),
  ("OPD","E1","Lección incorporada al proceso revisado","","E05 E28","N","E","Antes no se incorporaba la lección. Después se registra el caso negativo y la regresión."),
  ("IPM","E1","Plan integrado con alcance y roles","E01 E20","E01 E20","E","E","Plan y roles propuestos explícitos; aprobación se verifica en C07."),
  ("IPM","E1","Adaptación aplicada a captura y consolidación","E03 E17","E03 E18","E","E","Los resultados permiten verificar ejecución de ambos flujos."),
