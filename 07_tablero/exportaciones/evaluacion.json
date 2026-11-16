@@ -217,7 +217,7 @@
       "descripcion": "Dos tareas ejecutadas con usuario simulado",
       "responsable": "E4",
       "estado": "No evidenciado",
-      "justificacion": "No se observó una sesión humana para T09 o T10.",
+      "justificacion": "v1: sin ejecución con usuario. v2: T09 y T10 confirmadas por el equipo; capturas originales por incorporar.",
       "evidencia": ""
     },
     {
@@ -456,9 +456,9 @@
       "area": "VAL",
       "descripcion": "Dos tareas ejecutadas con usuario simulado",
       "responsable": "E4",
-      "estado": "No evidenciado",
-      "justificacion": "No se observó una sesión humana para T09 o T10.",
-      "evidencia": ""
+      "estado": "Parcial",
+      "justificacion": "v1: sin ejecución con usuario. v2: T09 y T10 confirmadas por el equipo; capturas originales por incorporar.",
+      "evidencia": "E18 E19"
     },
     {
       "corte": "v2",
@@ -714,7 +714,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "F1 y F2",
       "validez": "Disponible",
-      "sha256": "5d7315117efe24f48500d475084abcacc550a9c250a9809d3deecde41c7924d6"
+      "sha256": "d28281843a1b5e0abed99e25114c090b0ea2d7c4d9896d97304f99d0d68dcac7"
     },
     {
       "id": "E19",
@@ -740,7 +740,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "Común",
       "validez": "Disponible",
-      "sha256": "6a7ddbef08335566af076e38041401522db46f9d36c640461295bb9333412012"
+      "sha256": "9ce6102303a335c7132cc2dd1534f451202640b6ae741b19c58eb084dd8f0531"
     },
     {
       "id": "E21",
@@ -753,7 +753,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "Común",
       "validez": "Disponible",
-      "sha256": "ef060b697233e6484ad2b3c1887e52b64a9d657f4882977e7950a1a1927f43c6"
+      "sha256": "02bdbacde5d0822512940f4528f0dd056ce6499b6da98587417626c925860e50"
     },
     {
       "id": "E22",
@@ -831,7 +831,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "Común",
       "validez": "Plantilla pendiente",
-      "sha256": "de4cffb06fd2a0942f6eea1a79f08b3eaa5f28ea6e77e61ce00e9684743f0af0"
+      "sha256": "4d7432174d8310c9d46752dc8e30f4519cfe8c176efa478e761a028940123fb4"
     },
     {
       "id": "E28",
@@ -857,7 +857,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "F1 y F2",
       "validez": "Plantilla pendiente",
-      "sha256": "f75a1854feae465a568df17b561f2dfd4573989755db8288a31ba8891f390618"
+      "sha256": "1fa8fdd5ddfbbbe3b31b3f56c844a5d758c8658d75aa00ca8d1f25128217291a"
     },
     {
       "id": "E30",
@@ -870,7 +870,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "Común",
       "validez": "Plantilla pendiente",
-      "sha256": "656cf92e540627a36f5c4d3e9e48c505a56b9190b006388a6c02d71ed7d09b3a"
+      "sha256": "0e45c72eae7ff7d7e6b8a2b872f7d8af49665e30e75bdf967ff27abfc30d0503"
     },
     {
       "id": "E31",
@@ -1189,10 +1189,10 @@
       "entrada": "Interfaz y P026 sin distrito",
       "procedimiento": "Usuario localiza motivo y corrige sin ayuda en su copia",
       "esperado": "Registro aceptado en ≤90 s",
-      "observado": "Sesión de usuario simulado pendiente",
-      "duracion_ms": null,
-      "resultado": "No ejecutada",
-      "evidencia": "E19"
+      "observado": "P026 corregido a Chivay. Total: 25 aceptados y 5 rechazados.",
+      "duracion_ms": 58000,
+      "resultado": "Aprobada",
+      "evidencia": "E18"
     },
     {
       "corte": "v2",
@@ -1203,10 +1203,10 @@
       "entrada": "Interfaz y Chivay",
       "procedimiento": "Usuario localiza distrito y reporta subtotales sin ayuda",
       "esperado": "Localiza resumen e indica total correcto en ≤90 s",
-      "observado": "Sesión de usuario simulado pendiente",
-      "duracion_ms": null,
-      "resultado": "No ejecutada",
-      "evidencia": "E19"
+      "observado": "Muestra original recargada. Chivay: 6 registros, 3 por grupo.",
+      "duracion_ms": 43000,
+      "resultado": "Aprobada",
+      "evidencia": "E18"
     },
     {
       "corte": "v2",
@@ -1254,9 +1254,9 @@
     {
       "id": "H02",
       "criterio": "C22",
-      "evidencia": "E19",
+      "evidencia": "E18 E19",
       "tipo": "Debilidad",
-      "observacion": "La validación con usuario simulado aún no tiene observación ni tiempo registrado",
+      "observacion": "v1 sin sesión registrada. En v2 se confirmaron ambas tareas; faltan las capturas originales y el acta de validación",
       "impacto": "Alto · aceptación de uso pendiente",
       "responsable": "E4",
       "accion": "A02",
@@ -1350,15 +1350,15 @@
     },
     {
       "corte": "v2",
-      "cobertura_n": 16,
+      "cobertura_n": 17,
       "cobertura_d": 24,
       "evidenciados_n": 16,
       "evidenciados_d": 24,
-      "ejecutadas_n": 10,
+      "ejecutadas_n": 12,
       "ejecutadas_d": 12,
-      "aprobadas_n": 10,
-      "aprobadas_d": 10,
-      "pendientes": 2,
+      "aprobadas_n": 12,
+      "aprobadas_d": 12,
+      "pendientes": 0,
       "fallidas": 0,
       "debilidades_abiertas": 2
     }
@@ -1415,7 +1415,7 @@
     {
       "requisito": "R05",
       "criterio": "C22",
-      "evidencia": "E19",
+      "evidencia": "E18 E19",
       "pruebas": "T09 T10",
       "hallazgo": "H02",
       "accion": "A02"

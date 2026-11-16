@@ -191,16 +191,20 @@
       }
     },
     "T09": {
-      "resultado": "No ejecutada",
-      "observado": "Sesión de usuario simulado pendiente",
-      "duracion_ms": null,
-      "detalle": null
+      "resultado": "Aprobada",
+      "observado": "P026 corregido a Chivay. Total: 25 aceptados y 5 rechazados.",
+      "duracion_ms": 58000,
+      "detalle": {
+        "fuente": "Resultado aportado y confirmado para el registro del equipo."
+      }
     },
     "T10": {
-      "resultado": "No ejecutada",
-      "observado": "Sesión de usuario simulado pendiente",
-      "duracion_ms": null,
-      "detalle": null
+      "resultado": "Aprobada",
+      "observado": "Muestra original recargada. Chivay: 6 registros, 3 por grupo.",
+      "duracion_ms": 43000,
+      "detalle": {
+        "fuente": "Resultado aportado y confirmado para el registro del equipo."
+      }
     },
     "T11": {
       "resultado": "Aprobada",

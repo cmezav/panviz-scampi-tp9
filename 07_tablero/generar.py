@@ -66,7 +66,7 @@ CRITERIA = [
  ("VER","E4","Revisión por pares de evidencia de verificación","","","N","N","Falta revisión humana del log y los pasos."),
  ("VER","E4","Regresión posterior al cambio aprobada","E17","E18 E28","N","E","T12 falla en la base experimental y pasa tras el cambio."),
  ("VAL","E4","Protocolo con dos escenarios y condiciones de observación","E19","E19","E","E","Tareas, cronometraje, condiciones y criterio de aceptación definidos."),
- ("VAL","E4","Dos tareas ejecutadas con usuario simulado","","","N","N","No se observó una sesión humana para T09 o T10."),
+ ("VAL","E4","Dos tareas ejecutadas con usuario simulado","","E18 E19","N","P","v1: sin ejecución con usuario. v2: T09 y T10 confirmadas por el equipo; capturas originales por incorporar."),
  ("VAL","E4","Usuario y revisor corroboran el resultado","","","N","N","No existe un acta confirmada por participantes."),
  ("VAL","E4","Seguimiento de aceptación y adopción en ciclos posteriores","","","X","X","La muestra cubre un piloto; falta observación de ciclos posteriores."),
 ]
@@ -77,7 +77,7 @@ LINKS = [
  ("R03","C10","E09 E17 E18","T02","H01","A01"),
  ("R03","C18","E16 E17 E18","T04","H04","A03"),
  ("R04","C14","E07 E13 E17 E18","T07 T08","H03","A03"),
- ("R05","C22","E19","T09 T10","H02","A02"),
+ ("R05","C22","E18 E19","T09 T10","H02","A02"),
  ("R06","C20","E05 E17 E18 E28","T11 T12","H01","A01"),
 ]
 STATES = {"E":"Evidenciado","P":"Parcial","N":"No evidenciado","X":"No evaluable"}

@@ -36,6 +36,6 @@ La suite registra una prueba por ID en cada corte. T03 y T04 conservan las tres 
 
 ## Estado de entrega
 
-v1 es un experimento controlado, no un defecto histórico de PANVIZ. El corte v2 registra 10/10 aprobadas entre 10/12 ejecutadas. Quedan dos entrevistas, T09/T10, revisiones cruzadas y aportes nominales por completar con el equipo, y falta adjuntar su presentación. Los comandos publican un repositorio nuevo en la cuenta que se autentique.
+v1 es un experimento controlado, no un defecto histórico de PANVIZ. El corte v2 registra 12/12 aprobadas entre 12/12 ejecutadas. Quedan dos entrevistas, las capturas originales de T09/T10, revisiones cruzadas y aportes nominales por completar con el equipo, y falta adjuntar su presentación. Los comandos publican un repositorio nuevo en la cuenta que se autentique.
 
 Base conceptual y organización de artefactos: [TP8, repositorio de Gabriela](https://github.com/gbordae/panviz-iras-cmmi/tree/v0.1).
