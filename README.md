@@ -41,3 +41,7 @@ Capturas de v2: [T09: P026 corregido](06_evidencias/pruebas_usuario/T09_p026_cor
 v1 es un experimento controlado, no un defecto histórico de PANVIZ. El corte v2 registra 12/12 aprobadas entre 12/12 ejecutadas. Quedan dos entrevistas, revisiones cruzadas y aportes nominales por completar con el equipo, y falta adjuntar su presentación. Los comandos publican un repositorio nuevo en la cuenta que se autentique.
 
 Base conceptual y organización de artefactos: [TP8, repositorio de Gabriela](https://github.com/gbordae/panviz-iras-cmmi/tree/v0.1).
+
+## Verificación individual
+
+Consultar [E35](06_evidencias/revision_individual.md) para las comprobaciones de Cielo y su alcance.

@@ -42,6 +42,7 @@ EVIDENCE = [
  ("E32","Plan de acopio e indexación","06_evidencias/acopio.md","Común"),
  ("E33","Captura T09: P026 corregido","06_evidencias/pruebas_usuario/T09_p026_corregido.png","F1"),
  ("E34","Captura T10: resumen de Chivay","06_evidencias/pruebas_usuario/T10_resumen_chivay.png","F2"),
+ ("E35","Verificación individual del TP9","06_evidencias/revision_individual.md","F1 y F2"),
 ]
 PENDING = {"E27", "E29", "E30"}
 V2_ONLY = {"E05","E12","E18","E26","E28","E33","E34"}

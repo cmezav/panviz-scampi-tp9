@@ -22,3 +22,7 @@ Las observaciones siguientes proceden de un borrador de coordinación. Se requie
 - **E5 → pruebas de E4.** Agregar los valores recalculados de dos indicadores y compararlos con el tablero.
 - **E1 → evidencias de E5.** Agregar los IDs que se verificaron, las rutas, las huellas y el resultado de la búsqueda de duplicados.
 - **C15.** Registrar quién revisó los cinco riesgos y qué observó en cada control.
+
+## Verificación individual disponible
+
+La [revisión de Cielo](../revision_individual.md) cubre el proceso y los resultados de T09/T10. Las filas de revisión cruzada requieren una comprobación de otro integrante.

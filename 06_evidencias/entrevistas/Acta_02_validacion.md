@@ -17,3 +17,7 @@ Puntos del borrador de coordinación para contrastar con Michael e Italo. Los ti
 - **T09.** Tiempo por corroborar: 58 s. P026 deja de aparecer entre los rechazos tras corregir su distrito a Chivay. El resultado esperado es 25 aceptados y 5 rechazados.
 - **T10.** Tiempo por corroborar: 43 s. Con la muestra original cargada de nuevo, el resultado esperado es 6 registros de Chivay, 3 por grupo.
 - **Mejora sugerida.** Hacer más visible el acceso al resumen por distrito. Confirmar con el usuario la decisión de aceptación y registrar las condiciones reales de la sesión.
+
+## Verificación individual disponible
+
+La [revisión de Cielo](../revision_individual.md) enlaza los resultados de T09 y T10. Michael e Italo figuran como roles propuestos. La decisión de aceptación requiere una confirmación del usuario.
