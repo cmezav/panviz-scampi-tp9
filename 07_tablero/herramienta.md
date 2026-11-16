@@ -11,6 +11,19 @@ Alternativa local: LibreOffice Calc (formato ODS, LibreOffice bajo MPL 2.0 y lic
 **Verificación de preparación.** Se ejecutaron los casos técnicos del API local, el generador de CSV/JSON y la conversión a ODS. La prueba interactiva en navegador y el uso cronometrado por los integrantes se reservan para el equipo; documentar edición, duración real y observaciones en la sesión de cierre.
 
 
+## Comprobaciones de acopio y exportación
+
+**Fecha:** 15/11/2026. **Hora de creación del registro exportado:** 21:58 (Lima).
+**Entorno documentado:** [LibreOffice 26.8.2.2 en Windows 11](../06_evidencias/herramienta/version_libreoffice.png).
+
+| Comprobación | Resultado | Respaldo |
+|---|---|---|
+| Exportar un aporte | El formulario exportó una fila de prueba para C22 con descripción, referencia a E35, autor y fecha. | [CSV de prueba](../06_evidencias/herramienta/aportes_prueba.csv). |
+| Importar el CSV | La hoja de la captura inicial mostró el texto en una sola columna. En una comprobación aparte se reimportó el mismo archivo en Calc con UTF-8, coma y comillas dobles como delimitador de texto. Se obtuvieron cinco columnas y una fila completa. | El mismo CSV permite repetir la comprobación. |
+| Cambiar de corte | Las capturas muestran v1 y v2 con sus indicadores respectivos. En v2 aparecen 23 de 24 criterios con respaldo, 22 evidenciados y 12 de 12 pruebas aprobadas. | [Tablero v1](../06_evidencias/herramienta/tablero_v1.png) y [tablero v2](../06_evidencias/herramienta/tablero_v2.png). |
+
+**Por verificar:** persistencia del borrador después de F5, filtros de área y responsable, apertura de la evidencia E36 y duración total de la revisión. Los archivos disponibles no permiten confirmar una sesión cronometrada de 20 minutos.
+
 ## Actualizar las hojas de datos
 
 El tablero HTML se actualiza ejecutando generar.py. Para sincronizar el ODS, abrir cada CSV como hoja aparte, seleccionar la codificación UTF-8 y copiar las columnas por nombre a la hoja que corresponda conservando su orden. En Criterios, mantener con_evidencia en la última columna: 1 para una lista con evidencia enlazada y 0 para una lista vacía. Las fórmulas de los dos paneles se refieren al intervalo de filas del corte. Si se agrega una fila a Hallazgos, extender el intervalo de esa hoja en las fórmulas de ambos cortes. Guardar una nueva copia ODS y actualizar las dos capturas si cambia el corte.
