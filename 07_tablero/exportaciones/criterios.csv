@@ -20,7 +20,7 @@ v1,C18,VER,Suite técnica ejecutada con evidencia reproducible,E4,Evidenciado,"D
 v1,C19,VER,Revisión por pares de evidencia de verificación,E4,No evidenciado,Falta revisión humana del log y los pasos.,
 v1,C20,VER,Regresión posterior al cambio aprobada,E4,No evidenciado,T12 falla en la base experimental y pasa tras el cambio.,E17
 v1,C21,VAL,Protocolo con dos escenarios y condiciones de observación,E4,Evidenciado,"Tareas, cronometraje, condiciones y criterio de aceptación definidos.",E19
-v1,C22,VAL,Dos tareas ejecutadas con usuario simulado,E4,No evidenciado,v1: sin ejecución con usuario. v2: resultados registrados y capturas enlazadas para T09 y T10.,
+v1,C22,VAL,Dos tareas ejecutadas con usuario simulado,E4,No evidenciado,v1: sin ejecución con usuario. v2: Italo completó ambas tareas sin ayuda con Michael como cronometrador.,
 v1,C23,VAL,Usuario y revisor corroboran el resultado,E4,No evidenciado,No existe un acta confirmada por participantes.,
 v1,C24,VAL,Seguimiento de aceptación y adopción en ciclos posteriores,E4,No evaluable,La muestra cubre un piloto; falta observación de ciclos posteriores.,
 v2,C01,OPD,Estándar y plantillas versionados,E1,Evidenciado,Proceso y tres plantillas localizables.,E02 E04
@@ -44,6 +44,6 @@ v2,C18,VER,Suite técnica ejecutada con evidencia reproducible,E4,Evidenciado,"D
 v2,C19,VER,Revisión por pares de evidencia de verificación,E4,No evidenciado,Falta revisión humana del log y los pasos.,
 v2,C20,VER,Regresión posterior al cambio aprobada,E4,Evidenciado,T12 falla en la base experimental y pasa tras el cambio.,E18 E28
 v2,C21,VAL,Protocolo con dos escenarios y condiciones de observación,E4,Evidenciado,"Tareas, cronometraje, condiciones y criterio de aceptación definidos.",E19
-v2,C22,VAL,Dos tareas ejecutadas con usuario simulado,E4,Evidenciado,v1: sin ejecución con usuario. v2: resultados registrados y capturas enlazadas para T09 y T10.,E18 E19 E33 E34
+v2,C22,VAL,Dos tareas ejecutadas con usuario simulado,E4,Evidenciado,v1: sin ejecución con usuario. v2: Italo completó ambas tareas sin ayuda con Michael como cronometrador.,E18 E19 E36 E37 E38
 v2,C23,VAL,Usuario y revisor corroboran el resultado,E4,No evidenciado,No existe un acta confirmada por participantes.,
 v2,C24,VAL,Seguimiento de aceptación y adopción en ciclos posteriores,E4,No evaluable,La muestra cubre un piloto; falta observación de ciclos posteriores.,

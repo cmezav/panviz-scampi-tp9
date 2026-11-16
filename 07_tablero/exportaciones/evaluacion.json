@@ -217,7 +217,7 @@
       "descripcion": "Dos tareas ejecutadas con usuario simulado",
       "responsable": "E4",
       "estado": "No evidenciado",
-      "justificacion": "v1: sin ejecución con usuario. v2: resultados registrados y capturas enlazadas para T09 y T10.",
+      "justificacion": "v1: sin ejecución con usuario. v2: Italo completó ambas tareas sin ayuda con Michael como cronometrador.",
       "evidencia": ""
     },
     {
@@ -457,8 +457,8 @@
       "descripcion": "Dos tareas ejecutadas con usuario simulado",
       "responsable": "E4",
       "estado": "Evidenciado",
-      "justificacion": "v1: sin ejecución con usuario. v2: resultados registrados y capturas enlazadas para T09 y T10.",
-      "evidencia": "E18 E19 E33 E34"
+      "justificacion": "v1: sin ejecución con usuario. v2: Italo completó ambas tareas sin ayuda con Michael como cronometrador.",
+      "evidencia": "E18 E19 E36 E37 E38"
     },
     {
       "corte": "v2",
@@ -714,7 +714,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "F1 y F2",
       "validez": "Disponible",
-      "sha256": "b8b8896f3bbfa477d282ce634920a8d46c6f6e515c8319f6fcdb6c46f438a111"
+      "sha256": "0f38ccee1ce18feb7479f7513be08c114755d1af3484217e84f3ea3c43280114"
     },
     {
       "id": "E19",
@@ -753,7 +753,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "Común",
       "validez": "Disponible",
-      "sha256": "1735d7e00b6fb9a7abf05bb9c6fc3a89663b14b2e82a142f2ee38abda3c18aa3"
+      "sha256": "013892a6c19ae16fe358deafb95bf70b5f3992d2f12ed1ef7412acd96c42c998"
     },
     {
       "id": "E22",
@@ -857,7 +857,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "F1 y F2",
       "validez": "Plantilla pendiente",
-      "sha256": "9cd03cf7f941a7ef823373a5861e0fc7663b1b05658f61e120a58a11bc0807c7"
+      "sha256": "f7ef7dd3a47b2b1fd13a992e3ab265462f3e460a640dfec05e2663b1a76ced93"
     },
     {
       "id": "E30",
@@ -935,7 +935,46 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "F1 y F2",
       "validez": "Disponible",
-      "sha256": "c0caf47d57d41c1a11e4b9e7fd042194c2690aec23a00e87183057fa567a5362"
+      "sha256": "d96c9a872aeb1930780e5d181ea034f2598e0db0e9d76e7410efa96c074493ec"
+    },
+    {
+      "id": "E36",
+      "descripcion": "T09: corrección de P026 por Italo",
+      "tipo": "png",
+      "ruta": "06_evidencias/pruebas_usuario/captura_T09_italo.png",
+      "version": "v2",
+      "fecha": "2026-11-15",
+      "autor": "Sesión de Michael Suclle e Italo Ccoscco",
+      "revisor": "Pendiente de revisión nominal",
+      "flujo": "F1",
+      "validez": "Disponible",
+      "sha256": "38d5e4beabb8fed936deaab3f76cb32f302772f45ca00dd89f9c0ea433e6e901"
+    },
+    {
+      "id": "E37",
+      "descripcion": "T10: resumen de Chivay en la repetición",
+      "tipo": "png",
+      "ruta": "06_evidencias/pruebas_usuario/captura_T10_italo_repeticion.png",
+      "version": "v2",
+      "fecha": "2026-11-15",
+      "autor": "Sesión de Michael Suclle e Italo Ccoscco",
+      "revisor": "Pendiente de revisión nominal",
+      "flujo": "F2",
+      "validez": "Disponible",
+      "sha256": "18f7d396cf8b2aaf20f19ef514a05165d27acf600588db63578e309e2e3816d2"
+    },
+    {
+      "id": "E38",
+      "descripcion": "Registro de la sesión cronometrada",
+      "tipo": "md",
+      "ruta": "06_evidencias/pruebas_usuario/sesion_2026-11-15.md",
+      "version": "v2",
+      "fecha": "2026-11-15",
+      "autor": "Sesión de Michael Suclle e Italo Ccoscco",
+      "revisor": "Pendiente de revisión nominal",
+      "flujo": "F1 y F2",
+      "validez": "Disponible",
+      "sha256": "1c195130e79df8e415675da7672e2cd77a92eaa15f88df09231be9ac1cc27b96"
     }
   ],
   "pruebas": [
@@ -1228,10 +1267,10 @@
       "entrada": "Interfaz y P026 sin distrito",
       "procedimiento": "Usuario localiza motivo y corrige sin ayuda en su copia",
       "esperado": "Registro aceptado en ≤90 s",
-      "observado": "P026 corregido a Chivay. Total: 25 aceptados y 5 rechazados.",
-      "duracion_ms": 58000,
+      "observado": "P026 sin distrito se corrigió a Chivay y salió de rechazados. Total final: 25 aceptados y 5 rechazados.",
+      "duracion_ms": 61000,
       "resultado": "Aprobada",
-      "evidencia": "E33"
+      "evidencia": "E36"
     },
     {
       "corte": "v2",
@@ -1242,10 +1281,10 @@
       "entrada": "Interfaz y Chivay",
       "procedimiento": "Usuario localiza distrito y reporta subtotales sin ayuda",
       "esperado": "Localiza resumen e indica total correcto en ≤90 s",
-      "observado": "Muestra original recargada. Chivay: 6 registros, 3 por grupo.",
-      "duracion_ms": 43000,
+      "observado": "Muestra original validada y filtro en Todos al inicio. Chivay: 6 registros, 3 de adulto mayor y 3 infantiles.",
+      "duracion_ms": 53000,
       "resultado": "Aprobada",
-      "evidencia": "E34"
+      "evidencia": "E37"
     },
     {
       "corte": "v2",
@@ -1293,9 +1332,9 @@
     {
       "id": "H02",
       "criterio": "C22",
-      "evidencia": "E18 E19 E33 E34",
+      "evidencia": "E18 E19 E36 E37 E38",
       "tipo": "Debilidad",
-      "observacion": "v1 sin sesión registrada. En v2 se documentaron T09 y T10 con sus capturas. La aceptación del usuario corresponde a C23",
+      "observacion": "v1 sin sesión registrada. En v2 consta la sesión cronometrada de Michael e Italo. La aceptación del usuario corresponde a C23",
       "impacto": "Alto · validación de uso",
       "responsable": "E4",
       "accion": "A02",
@@ -1454,7 +1493,7 @@
     {
       "requisito": "R05",
       "criterio": "C22",
-      "evidencia": "E18 E19 E33 E34",
+      "evidencia": "E18 E19 E36 E37 E38",
       "pruebas": "T09 T10",
       "hallazgo": "H02",
       "accion": "A02"

@@ -26,6 +26,5 @@ consignados previamente en el resultado de v2 no se pueden verificar a partir
 de estas imágenes. Esta revisión individual no acredita una entrevista,
 una aceptación por un usuario independiente ni una revisión por pares.
 
-Michael e Italo se mantienen como roles propuestos para cronometraje y
-participación como usuario, respectivamente. El [plan de aportes](../01_plan/aportes.csv)
-contiene los demás roles y las acciones que quedan por confirmar.
+Esta verificación precede a la [sesión cronometrada E38](pruebas_usuario/sesion_2026-11-15.md),
+en la que Michael cronometró a Italo. E38 reúne las mediciones de esa sesión.

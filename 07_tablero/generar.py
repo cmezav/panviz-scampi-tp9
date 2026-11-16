@@ -43,9 +43,12 @@ EVIDENCE = [
  ("E33","Captura T09: P026 corregido","06_evidencias/pruebas_usuario/T09_p026_corregido.png","F1"),
  ("E34","Captura T10: resumen de Chivay","06_evidencias/pruebas_usuario/T10_resumen_chivay.png","F2"),
  ("E35","Verificación individual del TP9","06_evidencias/revision_individual.md","F1 y F2"),
+ ("E36","T09: corrección de P026 por Italo","06_evidencias/pruebas_usuario/captura_T09_italo.png","F1"),
+ ("E37","T10: resumen de Chivay en la repetición","06_evidencias/pruebas_usuario/captura_T10_italo_repeticion.png","F2"),
+ ("E38","Registro de la sesión cronometrada","06_evidencias/pruebas_usuario/sesion_2026-11-15.md","F1 y F2"),
 ]
 PENDING = {"E27", "E29", "E30"}
-V2_ONLY = {"E05","E12","E18","E26","E28","E33","E34"}
+V2_ONLY = {"E05","E12","E18","E26","E28","E33","E34","E36","E37","E38"}
 V1_ONLY = {"E11","E17","E25"}
 CRITERIA = [
  ("OPD","E1","Estándar y plantillas versionados","E02 E04","E02 E04","E","E","Proceso y tres plantillas localizables."),
@@ -69,7 +72,7 @@ CRITERIA = [
  ("VER","E4","Revisión por pares de evidencia de verificación","","","N","N","Falta revisión humana del log y los pasos."),
  ("VER","E4","Regresión posterior al cambio aprobada","E17","E18 E28","N","E","T12 falla en la base experimental y pasa tras el cambio."),
  ("VAL","E4","Protocolo con dos escenarios y condiciones de observación","E19","E19","E","E","Tareas, cronometraje, condiciones y criterio de aceptación definidos."),
- ("VAL","E4","Dos tareas ejecutadas con usuario simulado","","E18 E19 E33 E34","N","E","v1: sin ejecución con usuario. v2: resultados registrados y capturas enlazadas para T09 y T10."),
+ ("VAL","E4","Dos tareas ejecutadas con usuario simulado","","E18 E19 E36 E37 E38","N","E","v1: sin ejecución con usuario. v2: Italo completó ambas tareas sin ayuda con Michael como cronometrador."),
  ("VAL","E4","Usuario y revisor corroboran el resultado","","","N","N","No existe un acta confirmada por participantes."),
  ("VAL","E4","Seguimiento de aceptación y adopción en ciclos posteriores","","","X","X","La muestra cubre un piloto; falta observación de ciclos posteriores."),
 ]
@@ -80,7 +83,7 @@ LINKS = [
  ("R03","C10","E09 E17 E18","T02","H01","A01"),
  ("R03","C18","E16 E17 E18","T04","H04","A03"),
  ("R04","C14","E07 E13 E17 E18","T07 T08","H03","A03"),
- ("R05","C22","E18 E19 E33 E34","T09 T10","H02","A02"),
+ ("R05","C22","E18 E19 E36 E37 E38","T09 T10","H02","A02"),
  ("R06","C20","E05 E17 E18 E28","T11 T12","H01","A01"),
 ]
 STATES = {"E":"Evidenciado","P":"Parcial","N":"No evidenciado","X":"No evaluable"}
@@ -109,7 +112,8 @@ def generate():
             raise FileNotFoundError(path)
         index.append(dict(id=key,descripcion=title,tipo=f.suffix.strip("."),ruta=path,
             version="v1" if key in V1_ONLY else "v2" if key in V2_ONLY else "TP9",
-            fecha=date,autor="Ejecución técnica automatizada" if key in {"E17","E18","E25","E26"} else "Preparación del paquete TP9",
+            fecha="2026-11-15" if key in {"E36","E37","E38"} else date,
+            autor="Sesión de Michael Suclle e Italo Ccoscco" if key in {"E36","E37","E38"} else "Ejecución técnica automatizada" if key in {"E17","E18","E25","E26"} else "Preparación del paquete TP9",
             revisor="Pendiente de revisión nominal",flujo=flow,
             validez="Plantilla pendiente" if key in PENDING else "Pendiente" if not f.is_file() else "Disponible",
             sha256=hashlib.sha256(f.read_bytes()).hexdigest() if f.is_file() else ""))

@@ -1,6 +1,6 @@
 id,criterio,evidencia,tipo,observacion,impacto,responsable,accion,fecha_objetivo,estado_v1,estado_v2
 H01,C10,E10 E17 E18 E28,Debilidad,En v1 experimental dos fechas imposibles ingresan al consolidado; v2 corrige selección,Alto · conteo incorrecto,E3,A01,D+7,Abierta,Corregida técnicamente
-H02,C22,E18 E19 E33 E34,Debilidad,v1 sin sesión registrada. En v2 se documentaron T09 y T10 con sus capturas. La aceptación del usuario corresponde a C23,Alto · validación de uso,E4,A02,D+7,Abierta,Cerrada
+H02,C22,E18 E19 E36 E37 E38,Debilidad,v1 sin sesión registrada. En v2 consta la sesión cronometrada de Michael e Italo. La aceptación del usuario corresponde a C23,Alto · validación de uso,E4,A02,D+7,Abierta,Cerrada
 H03,C14,E13 E17 E18,Oportunidad de mejora,El permiso local evita escritura en el ensayo; ampliar diseño de identidad antes de un entorno real,Medio · alcance local,E3,A03,D+30,Identificada,Identificada
 H04,C18,E09 E10 E16 E17 E18,Fortaleza preliminar,Un oráculo de contenido separado del código acota la causa y permite comparar dos versiones con el mismo conjunto y comprobar estado persistido,Medio · diagnóstico reproducible,E5,A03,D+30,Identificada,Identificada
 H05,C03,E02 E20,Debilidad,No consta aprobación nominal del estándar ni revisión cruzada,Alto · corroboración insuficiente,E1,A02,D+7,Abierta,Abierta

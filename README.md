@@ -45,3 +45,7 @@ Base conceptual y organización de artefactos: [TP8, repositorio de Gabriela](ht
 ## Verificación individual
 
 Consultar [E35](06_evidencias/revision_individual.md) para las comprobaciones de Cielo y su alcance.
+
+## Sesión cronometrada de v2
+
+[Registro E38 y capturas](06_evidencias/pruebas_usuario/sesion_2026-11-15.md). Michael cronometró a Italo: T09 aprobada en 61 s y T10 aprobada en 53 s en la repetición con el filtro en Todos.

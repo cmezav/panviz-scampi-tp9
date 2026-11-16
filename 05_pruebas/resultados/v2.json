@@ -192,22 +192,43 @@
     },
     "T09": {
       "resultado": "Aprobada",
-      "observado": "P026 corregido a Chivay. Total: 25 aceptados y 5 rechazados.",
-      "duracion_ms": 58000,
+      "observado": "P026 sin distrito se corrigió a Chivay y salió de rechazados. Total final: 25 aceptados y 5 rechazados.",
+      "duracion_ms": 61000,
       "detalle": {
-        "fuente": "Resultado aportado y confirmado para el registro del equipo.",
-        "evidencia_id": "E33",
-        "captura": "06_evidencias/pruebas_usuario/T09_p026_corregido.png"
+        "inicio_sesion_reportado": "2026-11-15T19:00:00-05:00",
+        "cronometrador": "Michael Suclle",
+        "usuario": "Italo Ccoscco",
+        "version": "v2",
+        "puerto": 8765,
+        "recibio_ayuda": false,
+        "registro_sesion": "06_evidencias/pruebas_usuario/sesion_2026-11-15.md",
+        "fuente": "Registro de sesión reportado por Michael Suclle",
+        "evidencia_id": "E36",
+        "captura": "06_evidencias/pruebas_usuario/captura_T09_italo.png"
       }
     },
     "T10": {
       "resultado": "Aprobada",
-      "observado": "Muestra original recargada. Chivay: 6 registros, 3 por grupo.",
-      "duracion_ms": 43000,
+      "observado": "Muestra original validada y filtro en Todos al inicio. Chivay: 6 registros, 3 de adulto mayor y 3 infantiles.",
+      "duracion_ms": 53000,
       "detalle": {
-        "fuente": "Resultado aportado y confirmado para el registro del equipo.",
-        "evidencia_id": "E34",
-        "captura": "06_evidencias/pruebas_usuario/T10_resumen_chivay.png"
+        "inicio_sesion_reportado": "2026-11-15T19:00:00-05:00",
+        "cronometrador": "Michael Suclle",
+        "usuario": "Italo Ccoscco",
+        "version": "v2",
+        "puerto": 8765,
+        "recibio_ayuda": false,
+        "registro_sesion": "06_evidencias/pruebas_usuario/sesion_2026-11-15.md",
+        "filtro_inicial": "Todos",
+        "muestra_original_recargada": true,
+        "intento_previo": {
+          "duracion_ms": 47000,
+          "excluido": true,
+          "motivo": "Chivay preseleccionado"
+        },
+        "fuente": "Registro de sesión reportado por Michael Suclle",
+        "evidencia_id": "E37",
+        "captura": "06_evidencias/pruebas_usuario/captura_T10_italo_repeticion.png"
       }
     },
     "T11": {
