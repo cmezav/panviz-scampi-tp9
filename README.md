@@ -38,7 +38,7 @@ La suite registra una prueba por ID en cada corte. T03 y T04 conservan las tres 
 
 Capturas de v2: [T09: P026 corregido](06_evidencias/pruebas_usuario/T09_p026_corregido.png) y [T10: resumen de Chivay](06_evidencias/pruebas_usuario/T10_resumen_chivay.png).
 
-v1 es un experimento controlado, no un defecto histórico de PANVIZ. El corte v2 registra 12/12 aprobadas entre 12/12 ejecutadas. Quedan dos entrevistas, revisiones cruzadas y aportes nominales por completar con el equipo, y falta adjuntar su presentación. Los comandos publican un repositorio nuevo en la cuenta que se autentique.
+v1 es un experimento controlado, no un defecto histórico de PANVIZ. El corte v2 registra 12/12 aprobadas entre 12/12 ejecutadas. Quedan la entrevista de uso del proceso, la aprobación del estándar, las revisiones cruzadas y los aportes nominales por completar con el equipo, y falta adjuntar su presentación. Los comandos publican un repositorio nuevo en la cuenta que se autentique.
 
 Base conceptual y organización de artefactos: [TP8, repositorio de Gabriela](https://github.com/gbordae/panviz-iras-cmmi/tree/v0.1).
 
@@ -49,3 +49,5 @@ Consultar [E35](06_evidencias/revision_individual.md) para las comprobaciones de
 ## Sesión cronometrada de v2
 
 [Registro E38 y capturas](06_evidencias/pruebas_usuario/sesion_2026-11-15.md). Michael cronometró a Italo: T09 aprobada en 61 s y T10 aprobada en 53 s en la repetición con el filtro en Todos.
+
+[Acta 02 (E29)](06_evidencias/entrevistas/Acta_02_validacion.md). Italo aceptó el resultado de T09 y T10 para el piloto sin ajustes.

@@ -227,7 +227,7 @@
       "descripcion": "Usuario y revisor corroboran el resultado",
       "responsable": "E4",
       "estado": "No evidenciado",
-      "justificacion": "No existe un acta confirmada por participantes.",
+      "justificacion": "v1: sin acta de aceptación. v2: Italo acepta el resultado del piloto y Michael corrobora las dos pruebas cronometradas.",
       "evidencia": ""
     },
     {
@@ -466,9 +466,9 @@
       "area": "VAL",
       "descripcion": "Usuario y revisor corroboran el resultado",
       "responsable": "E4",
-      "estado": "No evidenciado",
-      "justificacion": "No existe un acta confirmada por participantes.",
-      "evidencia": ""
+      "estado": "Evidenciado",
+      "justificacion": "v1: sin acta de aceptación. v2: Italo acepta el resultado del piloto y Michael corrobora las dos pruebas cronometradas.",
+      "evidencia": "E29 E36 E37 E38"
     },
     {
       "corte": "v2",
@@ -854,10 +854,10 @@
       "version": "TP9",
       "fecha": "2026-11-14",
       "autor": "Preparación del paquete TP9",
-      "revisor": "Pendiente de revisión nominal",
+      "revisor": "Michael Suclle e Italo Ccoscco (Acta 02)",
       "flujo": "F1 y F2",
-      "validez": "Plantilla pendiente",
-      "sha256": "f7ef7dd3a47b2b1fd13a992e3ab265462f3e460a640dfec05e2663b1a76ced93"
+      "validez": "Disponible",
+      "sha256": "7e3579e7b2e5a890f0c9e05e6dafcff28f85925f9feace455bd1c93da1b605ac"
     },
     {
       "id": "E30",
@@ -1428,9 +1428,9 @@
     },
     {
       "corte": "v2",
-      "cobertura_n": 17,
+      "cobertura_n": 18,
       "cobertura_d": 24,
-      "evidenciados_n": 17,
+      "evidenciados_n": 18,
       "evidenciados_d": 24,
       "ejecutadas_n": 12,
       "ejecutadas_d": 12,
@@ -1494,6 +1494,14 @@
       "requisito": "R05",
       "criterio": "C22",
       "evidencia": "E18 E19 E36 E37 E38",
+      "pruebas": "T09 T10",
+      "hallazgo": "H02",
+      "accion": "A02"
+    },
+    {
+      "requisito": "R05",
+      "criterio": "C23",
+      "evidencia": "E29 E36 E37 E38",
       "pruebas": "T09 T10",
       "hallazgo": "H02",
       "accion": "A02"
