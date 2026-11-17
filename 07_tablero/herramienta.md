@@ -77,3 +77,11 @@ El tablero HTML se actualiza ejecutando generar.py. Para sincronizar el ODS, abr
 
 La justificación de Calc como alternativa a Grist se mantiene separada: no se afirma que una instalación haya superado 30 minutos.
 <!-- /PANVIZ_COMPROBACIONES_20261117 -->
+
+<!-- PANVIZ_GRIST_DURACION_REPORTADA -->
+## Actualización de la incidencia de Grist
+
+Cielo precisa que el intento de instalación duró **42 minutos hasta abandonar el intento**, durante un viaje con conexión lenta. Es una duración reportada retrospectivamente por la responsable; no se adjunta un log contemporáneo que la mida de forma independiente. Este dato completa la duración antes no registrada en la descripción de la contingencia.
+
+Este intervalo corresponde al intento de instalar Grist. Es distinto de los 24 minutos declarados para la revisión funcional de Calc y del tablero. La alternativa operativa se conserva.
+<!-- /PANVIZ_GRIST_DURACION_REPORTADA -->

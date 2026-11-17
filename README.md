@@ -61,3 +61,13 @@ Se adjuntan cuatro capturas de importación, exportación, filtro E4 y apertura 
 
 Cielo declara una revisión del 15/11/2026 de 22:07 a 22:31 (24 minutos), persistencia tras F5 y filtro VAL con cuatro criterios. Las horas se registran como declaración de la responsable; las capturas del 17/11/2026 no acreditan por sí mismas ese intervalo anterior. El alcance actualizado se encuentra en [herramienta.md](07_tablero/herramienta.md). Este apartado complementa los estados históricos del documento.
 <!-- /PANVIZ_COMPROBACIONES_20261117 -->
+
+<!-- PANVIZ_ACCESO_LOCAL -->
+## Acceso local con cuentas de demostración
+
+El arranque normal requiere inicio de sesión. Las credenciales y la secuencia actualizada están en [ACCESO_DEMO.md](04_prototipo/ACCESO_DEMO.md). Publicador importa/corrige/publica; lector consulta y el servidor rechaza su intento de publicar con HTTP 403. Ya no se asigna el permiso mediante una lista editable.
+
+Las comprobaciones de sesiones se ejecutan con `py -3 .\05_pruebas\probar_acceso.py` y guardan [acceso_local.json](05_pruebas/resultados/acceso_local.json), separado de los doce casos históricos. `medir.py` conserva los controles anteriores usando un modo de prueba local explícito. Los cortes v1/v2 y los resultados humanos no se reescriben al instalar este cambio.
+
+El intento de instalación de Grist duró **42 minutos hasta dejar de intentarlo, según el reporte posterior de Cielo**, mientras viajaba con conexión lenta. Su alcance se registra en [herramienta.md](07_tablero/herramienta.md).
+<!-- /PANVIZ_ACCESO_LOCAL -->

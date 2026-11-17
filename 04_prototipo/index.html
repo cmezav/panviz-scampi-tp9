@@ -187,12 +187,13 @@ input:focus,select:focus,textarea:focus { border-color:#769aca; box-shadow:0 0 0
 }
 
 </style>
+<style id="panviz-session-style">.panviz-sessionbar{display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-bottom:14px;color:var(--quiet);font-size:.76rem}.panviz-sessionbar button{min-height:31px;padding:5px 10px;font-size:.76rem}.panviz-sessionbar span{padding:5px 9px;background:#e6edf7;color:#355c91;border-radius:6px}#rol:disabled{opacity:1;background:#f5f7fb;color:#526985;cursor:default}</style>
 </head>
 <body>
 <a class="button skip" href="#contenido">Saltar al contenido</a>
 <aside class="rail"><a class="identity" href="/" aria-label="PANVIZ, inicio"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-text">PANVIZ<span class="brand-caption">QUALITY INSIGHTS</span></span></a><p class="rail-label">ESPACIO DE TRABAJO</p><nav aria-label="Navegación principal"><a href="/" title="Registros" aria-current="page"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/></svg><span>Registros</span></a><a href="/evaluacion" title="Evaluación"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>Evaluación</span></a><a class="section-link" href="#importacion" title="Importación"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 16V3m-5 5 5-5 5 5M4 15v6h16v-6"/></svg><span>Importación</span></a><a class="section-link" href="#consolidado" title="Consolidado"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 3v17h17M8 15v-4m5 4V6m5 9V9"/></svg><span>Consolidado</span></a><a class="section-link" href="#publicacion" title="Publicación local"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M8 12l3 3 5-6M12 2l9 4v6c0 5-9 10-9 10S3 17 3 12V6z"/></svg><span>Publicación local</span></a><a class="github" href="https://github.com/cmezav/panviz-scampi-tp9" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M8 20c-4 1-4-2-6-2m12 4v-4c0-1 0-2-1-2 4 0 7-2 7-6 0-2-1-3-2-4 0-1 0-2-1-3-2 0-3 1-3 1-2-1-5-1-7 0 0 0-1-1-3-1-1 1-1 2-1 3-1 1-2 2-2 4 0 4 3 6 7 6-1 0-1 1-1 2v4"/></svg><span>Repositorio GitHub</span></a></nav><div class="rail-foot"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M8 12l3 3 5-6M12 2l9 4v6c0 5-9 10-9 10S3 17 3 12V6z"/></svg><b>Piloto académico · local</b>Autoevaluación inspirada<br>en SCAMPI C</div></aside>
 <main class="shell" id="contenido">
-<header class="page-head"><div><span class="eyebrow">PANVIZ / CONTROL DE REGISTROS</span><h1><b>REGISTROS</b> y validación</h1><p>Importa, revisa y consolida la muestra de registros sintéticos.</p></div><div class="head-actions"><span class="version" id="version">Versión local</span><button class="info-button" id="about" type="button" aria-label="Información de esta vista" title="Información"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/></svg></button><button id="resetFilters" type="button"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 1 8M4 3v7h7"/></svg>Restablecer filtros</button></div></header>
+<div class="panviz-sessionbar" id="panvizSessionBar"><span id="panvizIdentity" role="status">Comprobando sesión…</span><button type="button" id="panvizLogout">Cerrar sesión</button></div><header class="page-head"><div><span class="eyebrow">PANVIZ / CONTROL DE REGISTROS</span><h1><b>REGISTROS</b> y validación</h1><p>Importa, revisa y consolida la muestra de registros sintéticos.</p></div><div class="head-actions"><span class="version" id="version">Versión local</span><button class="info-button" id="about" type="button" aria-label="Información de esta vista" title="Información"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/></svg></button><button id="resetFilters" type="button"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 1 8M4 3v7h7"/></svg>Restablecer filtros</button></div></header>
   <div class="cards" aria-label="Totales de importación">
     <article><h3>Registros procesados</h3><strong id="total-count">—</strong><small>Última importación</small></article>
     <article><h3>Aceptados</h3><strong id="accept-count">—</strong><small id="accept-rate">—</small></article>
@@ -232,12 +233,42 @@ input:focus,select:focus,textarea:focus { border-color:#769aca; box-shadow:0 0 0
 
   <section class="panel" id="publicacion">
     <h2>Publicación local</h2>
-    <div class="group"><label>Rol de simulación <select id="rol"><option value="lector">Lector</option><option value="publicador_simulado">Publicador simulado</option></select></label><button id="publish" class="primary" type="button">Intentar publicar</button></div>
+    <div class="group"><label>Rol de la sesión <select id="rol" disabled aria-label="Rol asignado por la sesión"><option value="lector">Lector</option><option value="publicador">Publicador</option></select></label><button id="publish" class="primary" type="button">Intentar publicar</button></div>
     <p id="resultado" class="status" role="status"></p>
-    <small class="publish-note">El servidor comprueba el rol simulado antes de guardar una publicación local.</small>
+    <small class="publish-note">El servidor comprueba los permisos de la cuenta autenticada antes de guardar una publicación local.</small>
   </section>
 <footer class="app-footer">PANVIZ · Piloto local con datos sintéticos · Calidad de software</footer></main>
-<dialog id="aboutDialog"><h2>Acerca de esta vista</h2><p>Este prototipo local trabaja con registros sintéticos. Cargar muestra prepara el editor; Validar e importar actualiza los resultados. Puedes corregir una línea rechazada y validar de nuevo. El filtro de distrito cambia el consolidado y el gráfico; los totales generales corresponden a toda la importación. El rol de publicación se simula en el servidor.</p><form method="dialog"><button class="primary">Entendido</button></form></dialog>
+<dialog id="aboutDialog"><h2>Acerca de esta vista</h2><p>Este prototipo local trabaja con registros sintéticos. Cargar muestra prepara el editor; Validar e importar actualiza los resultados. Puedes corregir una línea rechazada y validar de nuevo. El filtro de distrito cambia el consolidado y el gráfico; los totales generales corresponden a toda la importación. El permiso de publicación depende de la cuenta que inició sesión.</p><form method="dialog"><button class="primary">Entendido</button></form></dialog>
+<script id="panviz-session-script">
+// Session identity comes from the server. This adds no client-side role switch.
+(() => {
+ const realFetch=window.fetch.bind(window);
+ window.fetch=async (input, options={})=>{
+  const url=new URL(typeof input==='string'?input:input.url,location.href);
+  const headers=new Headers(options.headers||(typeof input!=='string'?input.headers:undefined));
+  if(url.origin===location.origin)headers.set('X-PANVIZ-Request','1');
+  const response=await realFetch(input,{...options,headers});
+  if(response.status===401 && !url.pathname.startsWith('/api/login')){
+   location.replace('/login');throw new Error('La sesión terminó. Inicia sesión otra vez.');
+  }
+  return response;
+ };
+ document.getElementById('panvizLogout').onclick=async event=>{
+  const button=event.currentTarget;button.disabled=true;
+  try{await fetch('/api/logout',{method:'POST'});location.replace('/login');}
+  catch{button.disabled=false;document.getElementById('panvizIdentity').textContent='No se pudo cerrar la sesión. Reintenta.';}
+ };
+ fetch('/api/session').then(r=>r.json()).then(user=>{
+  document.getElementById('panvizIdentity').textContent=user.usuario+' · '+(user.rol==='publicador'?'Publicador':'Lector');
+  const role=document.getElementById('rol');if(role)role.value=user.rol;
+  if(user.rol==='lector'){
+   for(const id of ['file','sample','source','run']){const node=document.getElementById(id);if(node)node.disabled=true;}
+   const note=document.getElementById('estado');if(note){note.textContent='Sesión de lector: consulta y filtros disponibles. Para importar o corregir, inicia sesión como publicador.';note.dataset.kind='normal';}
+  }
+ }).catch(()=>{});
+})();
+
+</script>
 <script>
 
 document.getElementById('about').onclick=()=>document.getElementById('aboutDialog').showModal();

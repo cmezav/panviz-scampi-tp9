@@ -32,7 +32,7 @@ TOTALS = [dict(r, total=int(r["total"])) for r in csv_rows("oraculo_resumen.csv"
 
 @contextmanager
 def instance(version, state):
-    args = [sys.executable, str(PROTOTYPE / "panviz.py"), "--version", version, "--port", "0", "--state", str(state)]
+    args = [sys.executable, str(PROTOTYPE / "panviz.py"), "--version", version, "--port", "0", "--state", str(state), "--modo-pruebas"]
     child = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     try:
         line = child.stdout.readline()

@@ -158,15 +158,27 @@ def handler(pilot):
     return Handler
 
 
+# PANVIZ_LOGIN_HANDLER
+_legacy_handler = handler
+
+def handler(pilot, require_login=True):
+    base = _legacy_handler(pilot)
+    if not require_login:
+        return base
+    from acceso import protect
+    return protect(base, pilot, HERE)
+
+
 def main():
     p = argparse.ArgumentParser()
     versions = tuple(v for v in ("v1", "v2") if (HERE / "versiones" / f"{v}.py").is_file())
     p.add_argument("--version", choices=versions, default=versions[-1])
     p.add_argument("--port", type=int, default=8765)
     p.add_argument("--state", type=Path)
+    p.add_argument("--modo-pruebas", action="store_true", help="Solo suite histórica local: omitir inicio de sesión")
     args = p.parse_args()
     state = args.state or HERE / ".estado" / args.version
-    with HTTPServer(("127.0.0.1", args.port), handler(Pilot(args.version, state))) as server:
+    with HTTPServer(("127.0.0.1", args.port), handler(Pilot(args.version, state), require_login=not args.modo_pruebas)) as server:
         port = server.server_address[1]
         print(f"PANVIZ {args.version} http://127.0.0.1:{port}", flush=True)
         server.serve_forever()
