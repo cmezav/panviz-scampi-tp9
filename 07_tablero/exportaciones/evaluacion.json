@@ -490,7 +490,7 @@
       "version": "TP9",
       "fecha": "2026-11-14",
       "autor": "Preparación del paquete TP9",
-      "revisor": "Pendiente de revisión nominal",
+      "revisor": "Cielo Meza: alcance del plan; Gabriela Borda: ruta y hash (E30)",
       "flujo": "Común",
       "validez": "Disponible",
       "sha256": "6b8bcf0f6de81f627f3e6fd7a0f370fb528b635ca56b83419c516f4d50176260"
@@ -503,7 +503,7 @@
       "version": "TP9",
       "fecha": "2026-11-14",
       "autor": "Preparación del paquete TP9",
-      "revisor": "Pendiente de revisión nominal",
+      "revisor": "Cielo Meza: aprobación del estándar; Gabriela Borda: ruta y hash (E27/E30)",
       "flujo": "Común",
       "validez": "Disponible",
       "sha256": "3419156a8c10e63a5168d1235b105e0a539ca328b9895d6ab993c567972027b9"
@@ -516,7 +516,7 @@
       "version": "TP9",
       "fecha": "2026-11-14",
       "autor": "Preparación del paquete TP9",
-      "revisor": "Pendiente de revisión nominal",
+      "revisor": "Gabriela Borda: rutas y hashes de E01-E12 (E30); alcance documental",
       "flujo": "F1 y F2",
       "validez": "Disponible",
       "sha256": "d053394e1c3a317e48100b72a73245894e47edf69e3e001a4b7438e9546734ea"
@@ -529,7 +529,7 @@
       "version": "TP9",
       "fecha": "2026-11-14",
       "autor": "Preparación del paquete TP9",
-      "revisor": "Pendiente de revisión nominal",
+      "revisor": "Gabriela Borda: rutas y hashes de E01-E12 (E30); alcance documental",
       "flujo": "Común",
       "validez": "Disponible",
       "sha256": "a9c286064a05b66109b47da8bee78c18d0548d839edd6fc28f51410e9a080d11"
@@ -542,7 +542,7 @@
       "version": "v2",
       "fecha": "2026-11-14",
       "autor": "Preparación del paquete TP9",
-      "revisor": "Pendiente de revisión nominal",
+      "revisor": "Gabriela Borda: rutas y hashes de E01-E12 (E30); alcance documental",
       "flujo": "F1 y F2",
       "validez": "Disponible",
       "sha256": "9beb2414d4b95ff12f932fcc438b1481dfff6b9005e931f2ca4f1c03fcd0c1d2"
@@ -555,7 +555,7 @@
       "version": "TP9",
       "fecha": "2026-11-14",
       "autor": "Preparación del paquete TP9",
-      "revisor": "Pendiente de revisión nominal",
+      "revisor": "Rodrigo Fernandez: trazabilidad de R01; Gabriela Borda: ruta y hash (E30)",
       "flujo": "F1 y F2",
       "validez": "Disponible",
       "sha256": "8a22651a01fb6289680a197ae747480094e80950f69852a3c0622be3f7181450"
@@ -568,7 +568,7 @@
       "version": "TP9",
       "fecha": "2026-11-14",
       "autor": "Preparación del paquete TP9",
-      "revisor": "Pendiente de revisión nominal",
+      "revisor": "Rodrigo Fernandez: riesgos K01-K05; Gabriela Borda: ruta y hash (E30)",
       "flujo": "F1 y F2",
       "validez": "Disponible",
       "sha256": "4b502b0e779c02aed0e8cc76a9f1897e93389807be77bcf635583e73701d8f4a"
@@ -581,7 +581,7 @@
       "version": "TP9",
       "fecha": "2026-11-14",
       "autor": "Preparación del paquete TP9",
-      "revisor": "Pendiente de revisión nominal",
+      "revisor": "Gabriela Borda: rutas y hashes de E01-E12 (E30); alcance documental",
       "flujo": "F1",
       "validez": "Disponible",
       "sha256": "6da39070bf1d94c71d56a06ae59139a3701491cf3a8ec73d9b181c2cfead7e2f"
@@ -594,7 +594,7 @@
       "version": "TP9",
       "fecha": "2026-11-14",
       "autor": "Preparación del paquete TP9",
-      "revisor": "Pendiente de revisión nominal",
+      "revisor": "Gabriela Borda: rutas y hashes de E01-E12 (E30); alcance documental",
       "flujo": "F2",
       "validez": "Disponible",
       "sha256": "aaa67c16676ab5cb3fd13459e244eac1bdc016ce9380268c0bb7c1538c9e2be2"
@@ -607,7 +607,7 @@
       "version": "TP9",
       "fecha": "2026-11-14",
       "autor": "Preparación del paquete TP9",
-      "revisor": "Pendiente de revisión nominal",
+      "revisor": "Gabriela Borda: rutas y hashes de E01-E12 (E30); alcance documental",
       "flujo": "F1",
       "validez": "Disponible",
       "sha256": "298173e5e55459dc312e7c954f025cd70208f09e185e426953fe60edb00dbf79"
@@ -620,7 +620,7 @@
       "version": "v1",
       "fecha": "2026-11-14",
       "autor": "Preparación del paquete TP9",
-      "revisor": "Pendiente de revisión nominal",
+      "revisor": "Gabriela Borda: rutas y hashes de E01-E12 (E30); alcance documental",
       "flujo": "F1",
       "validez": "Disponible",
       "sha256": "6389cd00e1a1143cd056fdb64884a27ed396d27df7953cbb881458e5d41177a2"
@@ -633,7 +633,7 @@
       "version": "v2",
       "fecha": "2026-11-14",
       "autor": "Preparación del paquete TP9",
-      "revisor": "Pendiente de revisión nominal",
+      "revisor": "Michael Suclle: diff de calendario; Gabriela Borda: ruta y hash (E30)",
       "flujo": "F1",
       "validez": "Disponible",
       "sha256": "0f241de4a635305139a59eb135ca883dd0142e0285f467cb5bd65dd554f625d7"
@@ -646,7 +646,7 @@
       "version": "TP9",
       "fecha": "2026-11-14",
       "autor": "Preparación del paquete TP9",
-      "revisor": "Pendiente de revisión nominal",
+      "revisor": "Michael Suclle: T01, T07 y cambio de calendario (E30)",
       "flujo": "F1 y F2",
       "validez": "Disponible",
       "sha256": "c22379b571e722e771713848d604546ecdbc8ac4a950ec54b0563906cffcc298"
@@ -711,7 +711,7 @@
       "version": "v2",
       "fecha": "2026-11-14",
       "autor": "Ejecución técnica automatizada",
-      "revisor": "Pendiente de revisión nominal",
+      "revisor": "Michael Suclle: T01/T02/T07/T11/T12; Italo Ccoscco: indicadores (E30)",
       "flujo": "F1 y F2",
       "validez": "Disponible",
       "sha256": "0f38ccee1ce18feb7479f7513be08c114755d1af3484217e84f3ea3c43280114"
@@ -841,7 +841,7 @@
       "version": "v2",
       "fecha": "2026-11-14",
       "autor": "Preparación del paquete TP9",
-      "revisor": "Pendiente de revisión nominal",
+      "revisor": "Michael Suclle: diff de calendario y cierre técnico de A01 (E30)",
       "flujo": "F1",
       "validez": "Disponible",
       "sha256": "8575e155c68656aae6aba8afc205d338e6e77d47c7c0481da837bceac3307569"

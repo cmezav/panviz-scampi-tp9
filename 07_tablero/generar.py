@@ -129,6 +129,12 @@ def generate():
         elif _capture_entry.get("id") == "E36":
             _capture_entry["revisor"] = "Cielo Meza: apertura y conteos comprobados el 17/11/2026"
     # PANVIZ_CAPTURE_METADATA_END
+    # PANVIZ_REVIEWERS_BEGIN
+    _documented_reviewers = {'E01': 'Cielo Meza: alcance del plan; Gabriela Borda: ruta y hash (E30)', 'E02': 'Cielo Meza: aprobación del estándar; Gabriela Borda: ruta y hash (E27/E30)', 'E03': 'Gabriela Borda: rutas y hashes de E01-E12 (E30); alcance documental', 'E04': 'Gabriela Borda: rutas y hashes de E01-E12 (E30); alcance documental', 'E05': 'Gabriela Borda: rutas y hashes de E01-E12 (E30); alcance documental', 'E06': 'Rodrigo Fernandez: trazabilidad de R01; Gabriela Borda: ruta y hash (E30)', 'E07': 'Rodrigo Fernandez: riesgos K01-K05; Gabriela Borda: ruta y hash (E30)', 'E08': 'Gabriela Borda: rutas y hashes de E01-E12 (E30); alcance documental', 'E09': 'Gabriela Borda: rutas y hashes de E01-E12 (E30); alcance documental', 'E10': 'Gabriela Borda: rutas y hashes de E01-E12 (E30); alcance documental', 'E11': 'Gabriela Borda: rutas y hashes de E01-E12 (E30); alcance documental', 'E12': 'Michael Suclle: diff de calendario; Gabriela Borda: ruta y hash (E30)', 'E13': 'Michael Suclle: T01, T07 y cambio de calendario (E30)', 'E18': 'Michael Suclle: T01/T02/T07/T11/T12; Italo Ccoscco: indicadores (E30)', 'E28': 'Michael Suclle: diff de calendario y cierre técnico de A01 (E30)'}
+    for _reviewed_evidence in index:
+        if _reviewed_evidence["id"] in _documented_reviewers:
+            _reviewed_evidence["revisor"] = _documented_reviewers[_reviewed_evidence["id"]]
+    # PANVIZ_REVIEWERS_END
     idx={x["id"]:x for x in index}
     criteria = []
     cases = read_csv(ROOT/"05_pruebas/casos.csv")
