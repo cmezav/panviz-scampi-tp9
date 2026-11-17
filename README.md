@@ -53,3 +53,11 @@ Consultar [E35](06_evidencias/revision_individual.md) para las comprobaciones de
 [Acta 02 (E29)](06_evidencias/entrevistas/Acta_02_validacion.md). Italo aceptó el resultado de T09 y T10 para el piloto sin ajustes.
 
 [Acta 01 (E27)](06_evidencias/entrevistas/Acta_01_uso_proceso.md). Gabriela registró su conformidad condicionada con el estándar; la [revisión cruzada E30](06_evidencias/revision_cruzada/registro.md) está documentada. Cielo aprobó el [estándar v1](02_procesos/estandar_v1.md) con observaciones documentales atendidas.
+
+<!-- PANVIZ_COMPROBACIONES_20261117 -->
+## Comprobaciones de herramienta: actualización documental
+
+Se adjuntan cuatro capturas de importación, exportación, filtro E4 y apertura de E36. Los nuevos archivos se integran en el índice sin reasignar IDs existentes.
+
+Cielo declara una revisión del 15/11/2026 de 22:07 a 22:31 (24 minutos), persistencia tras F5 y filtro VAL con cuatro criterios. Las horas se registran como declaración de la responsable; las capturas del 17/11/2026 no acreditan por sí mismas ese intervalo anterior. El alcance actualizado se encuentra en [herramienta.md](07_tablero/herramienta.md). Este apartado complementa los estados históricos del documento.
+<!-- /PANVIZ_COMPROBACIONES_20261117 -->

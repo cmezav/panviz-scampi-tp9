@@ -662,7 +662,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "F1 y F2",
       "validez": "Disponible",
-      "sha256": "2c3fbe5a1e9081d4fb6f28052ca87a2ac298dab6c34c14327b0d066fdb32f0a2"
+      "sha256": "ef57b02a778a28160a3140092141417040bea05583be039d316d971d31533bf4"
     },
     {
       "id": "E15",
@@ -792,7 +792,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "Común",
       "validez": "Disponible",
-      "sha256": "0f1a03048dbc42d06d253a7977484b851673916c537626e0494a3fd54f14402c"
+      "sha256": "3ffed285d7443c417e5d7d828d33206a87542ef9fbd3823b92a35b9252653100"
     },
     {
       "id": "E25",
@@ -883,7 +883,7 @@
       "revisor": "Pendiente de revisión nominal",
       "flujo": "Común",
       "validez": "Disponible",
-      "sha256": "53883273e17adc1016d4fc1a57d8e84fb259ee9d050a2fae1326656e61bb205e"
+      "sha256": "ff2c7abbdf9b8e1b0b14b30275a98f31011cc1686699e7aa5fde502f960a5e92"
     },
     {
       "id": "E32",
@@ -945,7 +945,7 @@
       "version": "v2",
       "fecha": "2026-11-15",
       "autor": "Sesión de Michael Suclle e Italo Ccoscco",
-      "revisor": "Pendiente de revisión nominal",
+      "revisor": "Cielo Meza: apertura y conteos comprobados el 17/11/2026",
       "flujo": "F1",
       "validez": "Disponible",
       "sha256": "38d5e4beabb8fed936deaab3f76cb32f302772f45ca00dd89f9c0ea433e6e901"
@@ -975,6 +975,58 @@
       "flujo": "F1 y F2",
       "validez": "Disponible",
       "sha256": "1c195130e79df8e415675da7672e2cd77a92eaa15f88df09231be9ac1cc27b96"
+    },
+    {
+      "id": "E39",
+      "descripcion": "Comprobación de importación de criterios",
+      "tipo": "png",
+      "ruta": "06_evidencias/herramienta/2026-11-17_importacion_criterios.png",
+      "version": "TP9",
+      "fecha": "2026-11-17",
+      "autor": "Cielo Meza (comprobación de herramienta)",
+      "revisor": "Comprobación individual; sin revisión independiente",
+      "flujo": "Común",
+      "validez": "Disponible",
+      "sha256": "726b188b15458fde2e5f748d23929fdd1852526e4a68310eb27fa7009816810d"
+    },
+    {
+      "id": "E40",
+      "descripcion": "Comprobación de exportación de aportes",
+      "tipo": "png",
+      "ruta": "06_evidencias/herramienta/2026-11-17_aportes_columnas.png",
+      "version": "TP9",
+      "fecha": "2026-11-17",
+      "autor": "Cielo Meza (comprobación de herramienta)",
+      "revisor": "Comprobación individual; sin revisión independiente",
+      "flujo": "Común",
+      "validez": "Disponible",
+      "sha256": "8390c48f848fbfe5615611745da4aa69c94bd9734ce3f5dd7336cbf4be4bfe2c"
+    },
+    {
+      "id": "E41",
+      "descripcion": "Filtro E4 e indicadores globales",
+      "tipo": "png",
+      "ruta": "06_evidencias/herramienta/2026-11-17_filtro_responsable.png",
+      "version": "TP9",
+      "fecha": "2026-11-17",
+      "autor": "Cielo Meza (comprobación de herramienta)",
+      "revisor": "Comprobación individual; sin revisión independiente",
+      "flujo": "Común",
+      "validez": "Disponible",
+      "sha256": "0b287ca7ba0796acdf7e19d5dbee04c111a8a4c9d4467ab499b478646a035c4c"
+    },
+    {
+      "id": "E42",
+      "descripcion": "Comprobación de apertura de E36",
+      "tipo": "png",
+      "ruta": "06_evidencias/herramienta/2026-11-17_apertura_e36.png",
+      "version": "TP9",
+      "fecha": "2026-11-17",
+      "autor": "Cielo Meza (comprobación de herramienta)",
+      "revisor": "Comprobación individual; sin revisión independiente",
+      "flujo": "Común",
+      "validez": "Disponible",
+      "sha256": "aafba41a675577283738c1a7e60bdfffa22819047f6818a2353d4cdf4ac73f90"
     }
   ],
   "pruebas": [

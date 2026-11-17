@@ -38,3 +38,42 @@ Alternativa local: LibreOffice Calc (formato ODS, LibreOffice bajo MPL 2.0 y lic
 ## Actualizar las hojas de datos
 
 El tablero HTML se actualiza ejecutando generar.py. Para sincronizar el ODS, abrir cada CSV como hoja aparte, seleccionar la codificación UTF-8 y copiar las columnas por nombre a la hoja que corresponda conservando su orden. En Criterios, mantener con_evidencia en la última columna: 1 para una lista con evidencia enlazada y 0 para una lista vacía. Las fórmulas de los dos paneles se refieren al intervalo de filas del corte. Si se agrega una fila a Hallazgos, extender el intervalo de esa hoja en las fórmulas de ambos cortes. Guardar una nueva copia ODS y actualizar las dos capturas si cambia el corte.
+
+<!-- PANVIZ_COMPROBACIONES_20261117 -->
+## Comprobaciones respaldadas con capturas del 17/11/2026
+
+**Responsable de la comprobación:** Cielo Meza. Se incorporan capturas suministradas por ella de la sesión actual. Estas comprobaciones documentan funciones concretas; no acreditan una revisión cronometrada de 20 minutos ni una instalación de Grist de más de 30 minutos.
+
+| Comprobación | Resultado visible | Respaldo |
+|---|---|---|
+| Importación de criterios | El archivo aparece separado en columnas: corte, ID, área, descripción, responsable, estado y justificación. Cielo reportó su apertura en LibreOffice. | [E39: criterios importados](../06_evidencias/herramienta/2026-11-17_importacion_criterios.png) |
+| Exportación de aportes y apertura en hoja de cálculo | Se observan cinco columnas (criterio, descripción, referencia, autor y fecha) y dos registros. El nuevo aporte describe la prueba del formulario y la exportación CSV. La captura acredita el contenido exportado y su separación en columnas. | [E40: aportes exportados](../06_evidencias/herramienta/2026-11-17_aportes_columnas.png) |
+| Filtro por responsable | El control muestra E4. Los indicadores generales conservan los valores de todo v2: 23/24 con evidencia, 22/24 evidenciados, 12/12 ejecutadas, 12/12 aprobadas y cero debilidades abiertas. La captura no incluye la matriz filtrada. | [E41: filtro E4 e indicadores](../06_evidencias/herramienta/2026-11-17_filtro_responsable.png) |
+| Acceso a evidencia | La ficha E36 abre la imagen de T09, donde P026 está corregido y el resultado es 25 aceptados y 5 rechazados. Se comprobó el acceso y el contenido visible; esto no constituye una nueva medición de T09. | [E42: apertura de E36](../06_evidencias/herramienta/2026-11-17_apertura_e36.png) |
+
+**Estado de estas comprobaciones:** documentadas con las capturas adjuntas. La persistencia tras F5 y el filtro VAL conservan el alcance de los resultados reportados anteriormente: estas imágenes no aportan una nueva captura de esas dos comprobaciones.
+
+**Duración de la sesión actual:** no registrada. La revisión cronometrada de 20 minutos sigue sin acreditarse. Se mantiene la limitación de acopio local por navegador y consolidación manual mediante CSV.
+
+**Versiones:** el generador recalcula las huellas de las interfaces vigentes y de los nuevos archivos al incorporar esta evidencia. Las capturas de pruebas anteriores conservan su fecha y versión originales.
+
+
+## Declaración posterior de duración de la revisión
+
+**Fuente:** datos comunicados por Cielo Meza en la conversación de preparación de la entrega.
+
+| Campo | Valor declarado |
+|---|---|
+| Fecha de la revisión indicada por Cielo | 15/11/2026 |
+| Inicio indicado | 22:07, hora de Lima |
+| Fin indicado | 22:31, hora de Lima |
+| Duración calculada entre las horas indicadas | 24 minutos |
+| Persistencia tras F5 | Cielo indica que el aporte permaneció registrado. |
+| Filtro VAL | Cielo indica que mostró solo los cuatro criterios de VAL. |
+
+**Alcance del registro:** se conserva la declaración de la responsable. No se dispone de un registro contemporáneo del cronómetro que permita verificar las horas de inicio y fin. Este apartado no certifica una medición independiente.
+
+**Distinción de fechas:** E39–E42 corresponden a las capturas aportadas el 17/11/2026. Respaldan las funciones visibles en ellas y no demuestran que esas capturas se tomaran durante el intervalo declarado del 15/11/2026. Se conservan sus fechas y nombres originales.
+
+La justificación de Calc como alternativa a Grist se mantiene separada: no se afirma que una instalación haya superado 30 minutos.
+<!-- /PANVIZ_COMPROBACIONES_20261117 -->
