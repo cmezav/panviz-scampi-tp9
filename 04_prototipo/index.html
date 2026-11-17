@@ -128,6 +128,65 @@ table{border-collapse:collapse;width:100%;font-size:.8rem}th,td{text-align:left;
 @media(max-width:560px){.rail .brand-text{font-size:.95rem}.rail .brand-caption{display:none}.rail nav a{min-height:44px;padding:10px}}
 
 </style>
+<style id="panviz-microinteracciones">
+/* PANVIZ: microinteractions only. Layout, typography and data are unchanged. */
+@media (prefers-reduced-motion: no-preference) {
+  button,.button,.rail nav a,.evidence-links a {
+    transition: background-color 160ms ease, border-color 160ms ease,
+      color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+  }
+  .cards article,.box,.panel {
+    transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+  }
+  input,select,textarea {
+    transition: border-color 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+  }
+  tbody tr,tbody td { transition: background-color 140ms ease; }
+  .bar span,.column i,.donut { transition: filter 160ms ease; }
+  .rail nav a .icon,button .icon { transition: transform 160ms ease; }
+  .bar span { transition: width 240ms ease, filter 160ms ease; }
+  .ratio span { transition: width 240ms ease; }
+  button:not(:disabled):active,.button:active { transform: translateY(0) scale(.98); }
+  dialog[open] { animation: panviz-dialog-in 180ms ease-out; }
+  .status:not(:empty) { animation: panviz-status-in 180ms ease-out; }
+  @keyframes panviz-dialog-in {
+    from { opacity:0; transform:translateY(6px); }
+    to { opacity:1; transform:translateY(0); }
+  }
+  @keyframes panviz-status-in {
+    from { opacity:0; transform:translateY(3px); }
+    to { opacity:1; transform:translateY(0); }
+  }
+}
+@media (hover:hover) and (pointer:fine) {
+  button:not(:disabled):hover,.button:hover {
+    box-shadow:0 4px 11px #214b8315;
+  }
+  .cards article:hover { border-color:#b8c9e2; box-shadow:0 7px 20px #214b8312; }
+  .box:hover,.panel:hover { border-color:#cbd7e8; box-shadow:0 4px 16px #214b830b; }
+  .rail nav a:not([aria-current="page"]):hover { box-shadow:inset 3px 0 0 #93b9ec; }
+  .evidence-links a:hover { background-color:#e1eafa; box-shadow:0 2px 7px #214b8314; }
+  input:hover,select:hover,textarea:hover { border-color:#acbfd9; }
+  tbody tr:hover td { background-color:#f1f5fc; }
+  .bar span:hover,.column i:hover,.donut:hover { filter:brightness(1.06); }
+}
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+  button:not(:disabled):hover,.button:hover { transform:translateY(-1px); }
+  button:not(:disabled):active,.button:active { transform:translateY(0) scale(.98); }
+  .cards article:hover { transform:translateY(-2px); }
+  .rail nav a:hover .icon { transform:translateX(1px); }
+}
+input:focus,select:focus,textarea:focus { border-color:#769aca; box-shadow:0 0 0 3px #29569412; }
+.panel:focus-within,.box:focus-within { border-color:#c3d2e6; }
+@media (prefers-reduced-motion:reduce) {
+  button,.button,.rail nav a,.rail nav a .icon,button .icon,.evidence-links a,
+  .cards article,.box,.panel,input,select,textarea,tbody tr,tbody td,
+  .bar span,.column i,.donut,.ratio span,dialog[open],.status:not(:empty) {
+    animation:none!important; transition:none!important; transform:none!important;
+  }
+}
+
+</style>
 </head>
 <body>
 <a class="button skip" href="#contenido">Saltar al contenido</a>
