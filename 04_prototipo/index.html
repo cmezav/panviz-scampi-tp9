@@ -115,6 +115,19 @@ table{border-collapse:collapse;width:100%;font-size:.8rem}th,td{text-align:left;
 @media print{.rail,.head-actions,.skip{display:none}body{background:white}main.shell{margin:0;border:0;padding:0}.panel,.box,.cards article{break-inside:avoid;box-shadow:none}.matrix-scroll{max-height:none}.scroll{overflow:visible}}
 
 </style>
+<style id="panviz-menu-consistente">
+/* Consistent sidebar typography and a two-line brand lockup. */
+.rail .identity{gap:10px;letter-spacing:1px;min-width:0}
+.rail .brand-text{display:block;min-width:0;font-size:1.35rem;line-height:1.2;letter-spacing:1px}
+.rail .brand-caption{display:block;font-size:.58rem;line-height:1.4;letter-spacing:1.3px;margin-top:6px;white-space:normal;overflow-wrap:normal}
+.rail nav a,.rail nav a.section-link,.rail nav a.github{font-size:.875rem;font-weight:500;line-height:1.45;min-height:48px;padding:12px;gap:12px}
+.rail nav a[aria-current="page"]{font-weight:600}
+.rail nav a .icon{width:19px;height:19px}
+@media(max-width:1180px) and (min-width:881px){.rail .brand-text{font-size:1.15rem}.rail .brand-caption{font-size:.53rem;letter-spacing:1px}.rail .identity{gap:8px}}
+@media(max-width:880px) and (min-width:561px){.rail .brand-text{display:none}}
+@media(max-width:560px){.rail .brand-text{font-size:.95rem}.rail .brand-caption{display:none}.rail nav a{min-height:44px;padding:10px}}
+
+</style>
 </head>
 <body>
 <a class="button skip" href="#contenido">Saltar al contenido</a>
